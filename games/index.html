@@ -108,6 +108,11 @@ section{padding:80px 0}
 .lv.feature .body{padding:30px 30px 26px;justify-content:center}
 .lv.feature h3{font-size:clamp(34px,4vw,52px)}
 .lv.feature .hook{font-size:17px}
+.lv .dev{position:absolute;bottom:12px;right:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:4px 8px;color:var(--muted)}
+.lv .dev.ok{color:#08110f;background:var(--mint);border-color:var(--mint)}
+.phone-note{display:none;margin:0 0 22px;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:14.5px}
+.phone-note b{color:var(--text)}
+@media (pointer:coarse){.phone-note{display:block}}
 .lv .new{position:absolute;bottom:12px;left:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;background:var(--hot);color:#141000;border-radius:6px;padding:4px 9px}
 .lv .feats{display:flex;flex-direction:column;gap:6px;margin:4px 0 0;padding:0;list-style:none;color:var(--muted);font-size:14.5px}
 .lv .feats li::before{content:"▸ ";color:var(--c)}
@@ -220,9 +225,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <p>Each prototype asks one design question. Play it first, then open the design notes to see how I built it.</p>
     </div>
 
+    <p class="phone-note">On a phone? <b>Last Signal</b> and <b>The Last Train</b> play with touch. The other five need a keyboard, so open them on a computer.</p>
     <div class="levels">
       <article class="lv feature rv" style="--c:#5fe3c8">
-        <a class="shot" href="last-signal/" target="_blank" rel="noopener" aria-label="Play Last Signal"><img src="img/last-signal.jpg" alt="Last Signal gameplay: the rescue ship near the mothership ring, an astronaut inside a teal oxygen ring, and edge-of-screen arrows pointing to other crew with their seconds of oxygen." loading="lazy"><span class="no">01</span><span class="eng">UNITY 6</span><span class="new">LATEST</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="last-signal/" target="_blank" rel="noopener" aria-label="Play Last Signal"><img src="img/last-signal.jpg" alt="Last Signal gameplay: the rescue ship near the mothership ring, an astronaut inside a teal oxygen ring, and edge-of-screen arrows pointing to other crew with their seconds of oxygen." loading="lazy"><span class="no">01</span><span class="eng">UNITY 6</span><span class="new">LATEST</span><span class="dev ok">PHONE + DESKTOP</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Space rescue · triage · game UI</span>
           <h3>Last Signal</h3>
@@ -234,7 +240,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#7fd8ff">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/soap-panic.html" target="_blank" rel="noopener" aria-label="Play Soap Panic"><img src="img/soap-panic.jpg" alt="Soap Panic: top-down bathroom course with a rubber duck on a bar of soap." loading="lazy"><span class="no">02</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/soap-panic.html" target="_blank" rel="noopener" aria-label="Play Soap Panic"><img src="img/soap-panic.jpg" alt="Soap Panic: top-down bathroom course with a rubber duck on a bar of soap." loading="lazy"><span class="no">02</span><span class="eng">UNITY</span><span class="dev">DESKTOP · KEYBOARD</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Physics · momentum</span>
           <h3>Soap Panic</h3>
@@ -245,7 +251,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ff8a5c">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/stack-splat.html" target="_blank" rel="noopener" aria-label="Play Stack &amp; Splat"><img src="img/stack-splat.jpg" alt="Stack and Splat: a tall wobbling pancake stack racing down a breakfast table." loading="lazy" style="object-position:center 70%"><span class="no">03</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/stack-splat.html" target="_blank" rel="noopener" aria-label="Play Stack &amp; Splat"><img src="img/stack-splat.jpg" alt="Stack and Splat: a tall wobbling pancake stack racing down a breakfast table." loading="lazy" style="object-position:center 70%"><span class="no">03</span><span class="eng">UNITY</span><span class="dev">DESKTOP · KEYBOARD</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Risk / reward · balance</span>
           <h3>Stack &amp; Splat</h3>
@@ -256,7 +262,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ff5d6c">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/checkpoint-run.html" target="_blank" rel="noopener" aria-label="Play Checkpoint Run"><img src="img/checkpoint-run.jpg" alt="Checkpoint Run: red pickup truck on a mountain highway with crates, traffic and cyan checkpoint gates." loading="lazy"><span class="no">04</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/checkpoint-run.html" target="_blank" rel="noopener" aria-label="Play Checkpoint Run"><img src="img/checkpoint-run.jpg" alt="Checkpoint Run: red pickup truck on a mountain highway with crates, traffic and cyan checkpoint gates." loading="lazy"><span class="no">04</span><span class="eng">UNITY</span><span class="dev">DESKTOP · KEYBOARD</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Arcade driving · time attack</span>
           <h3>Checkpoint Run</h3>
@@ -267,7 +273,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ffcf4a">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/last-delivery.html" target="_blank" rel="noopener" aria-label="Play Last Delivery"><img src="img/last-delivery.jpg" alt="Last Delivery: a courier beside a timed yellow gate and cyan checkpoint." loading="lazy"><span class="no">05</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/last-delivery.html" target="_blank" rel="noopener" aria-label="Play Last Delivery"><img src="img/last-delivery.jpg" alt="Last Delivery: a courier beside a timed yellow gate and cyan checkpoint." loading="lazy"><span class="no">05</span><span class="eng">UNITY</span><span class="dev">DESKTOP · KEYBOARD</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Timing · interaction states</span>
           <h3>Last Delivery</h3>
@@ -278,7 +284,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#b48cff">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/rescue-ranch.html" target="_blank" rel="noopener" aria-label="Play Rescue Ranch"><img src="img/rescue-ranch.jpg" alt="Rescue Ranch: top-down field with the player, animals and a chain multiplier panel." loading="lazy"><span class="no">06</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/rescue-ranch.html" target="_blank" rel="noopener" aria-label="Play Rescue Ranch"><img src="img/rescue-ranch.jpg" alt="Rescue Ranch: top-down field with the player, animals and a chain multiplier panel." loading="lazy"><span class="no">06</span><span class="eng">UNITY</span><span class="dev">DESKTOP · KEYBOARD</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Aim · streaks</span>
           <h3>Rescue Ranch</h3>
@@ -289,7 +295,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#5fe3c8">
-        <a class="shot" href="platform-zero/" target="_blank" rel="noopener" aria-label="Play The Last Train"><img src="img/pz-hall.jpg" alt="The Last Train: VR station hall with departure boards and circle, triangle and square switches." loading="lazy"><span class="no">07</span><span class="eng">VR · SHAPESXR</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="platform-zero/" target="_blank" rel="noopener" aria-label="Play The Last Train"><img src="img/pz-hall.jpg" alt="The Last Train: VR station hall with departure boards and circle, triangle and square switches." loading="lazy"><span class="no">07</span><span class="eng">VR · SHAPESXR</span><span class="dev ok">PHONE + DESKTOP</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">VR escape room · puzzle</span>
           <h3>The Last Train</h3>
@@ -299,7 +305,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         </div>
       </article>
     </div>
-    <p class="note rv">All seven are learning prototypes made with AI assistance (credits are in each game's notes). Some use Unity Create with Code course assets, which keep their original licences. Built for a desktop browser and keyboard.</p>
+    <p class="note rv">All seven are learning prototypes made with AI assistance (credits are in each game's notes). Some use Unity Create with Code course assets, which keep their original licences. Most are built for a desktop browser and keyboard; Last Signal and The Last Train also work on phones.</p>
   </div>
 </section>
 
