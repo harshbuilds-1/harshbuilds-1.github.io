@@ -6,7 +6,7 @@
 <title>Harsh Kumar — Games</title>
 <meta name="description" content="Playable game prototypes by Harsh Kumar: Unity games and a VR escape room. Play in your browser, then read the design notes.">
 <meta property="og:title" content="Harsh Kumar — Games">
-<meta property="og:description" content="Six playable prototypes. Unity + VR. Play in your browser.">
+<meta property="og:description" content="Seven playable prototypes. Unity + VR. Play in your browser.">
 <meta property="og:image" content="img/checkpoint-run.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +103,15 @@ section{padding:80px 0}
 .lv .row a,.lv .row button{flex:1;justify-content:center;padding:11px 12px;font-size:14px}
 .lv .row .play{background:var(--c);border-color:var(--c);color:#0b0b0b}
 .lv .row .play:hover{color:#0b0b0b;filter:brightness(1.08)}
-@media (max-width:1000px){.levels{grid-template-columns:repeat(2,1fr)}}
+.lv.feature{grid-column:1/-1;display:grid;grid-template-columns:1.45fr 1fr}
+.lv.feature .shot{aspect-ratio:auto;min-height:100%}
+.lv.feature .body{padding:30px 30px 26px;justify-content:center}
+.lv.feature h3{font-size:clamp(34px,4vw,52px)}
+.lv.feature .hook{font-size:17px}
+.lv .new{position:absolute;bottom:12px;left:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;background:var(--hot);color:#141000;border-radius:6px;padding:4px 9px}
+.lv .feats{display:flex;flex-direction:column;gap:6px;margin:4px 0 0;padding:0;list-style:none;color:var(--muted);font-size:14.5px}
+.lv .feats li::before{content:"▸ ";color:var(--c)}
+@media (max-width:1000px){.levels{grid-template-columns:repeat(2,1fr)}.lv.feature{grid-template-columns:1fr}.lv.feature .shot{aspect-ratio:16/9}}
 @media (max-width:620px){.levels{grid-template-columns:1fr}}
 .note{color:var(--dim);font-size:13.5px;margin-top:22px}
 
@@ -188,14 +196,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <main id="top">
 <section class="title" aria-labelledby="name">
-  <div class="wall" aria-hidden="true"><div class="col"><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/pz-hall.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/pz-hall.jpg" alt=""></div><div class="col"><img src="img/checkpoint-run.jpg" alt=""><img src="img/rescue-ranch.jpg" alt=""><img src="img/stack-splat.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/rescue-ranch.jpg" alt=""><img src="img/stack-splat.jpg" alt=""></div><div class="col"><img src="img/stack-splat.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/stack-splat.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""></div><div class="col"><img src="img/pz-hall.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/rescue-ranch.jpg" alt=""><img src="img/pz-hall.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/rescue-ranch.jpg" alt=""></div></div>
+  <div class="wall" aria-hidden="true"><div class="col"><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/pz-hall.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/pz-hall.jpg" alt=""></div><div class="col"><img src="img/checkpoint-run.jpg" alt=""><img src="img/last-signal.jpg" alt=""><img src="img/stack-splat.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/last-signal.jpg" alt=""><img src="img/stack-splat.jpg" alt=""></div><div class="col"><img src="img/stack-splat.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""><img src="img/stack-splat.jpg" alt=""><img src="img/soap-panic.jpg" alt=""><img src="img/last-delivery.jpg" alt=""></div><div class="col"><img src="img/pz-hall.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/last-signal.jpg" alt=""><img src="img/pz-hall.jpg" alt=""><img src="img/checkpoint-run.jpg" alt=""><img src="img/last-signal.jpg" alt=""></div></div>
   <div class="wrap">
     <span class="tag mono"><i aria-hidden="true"></i>A playable portfolio</span>
     <h1 id="name">Harsh<span>Kumar</span></h1>
     <p class="role">Game prototyping · Game UX/UI · Vancouver</p>
-    <p class="intro">I opened Unity for the first time in September 2026. Since then I've built <b>six small games you can play right now</b> in your browser, each exploring one feeling: slipping, balancing, racing the clock.</p>
+    <p class="intro">I opened Unity for the first time in September 2026. Since then I've built <b>seven small games you can play right now</b> in your browser, each exploring one feeling: slipping, balancing, racing the clock.</p>
     <nav aria-label="Main menu"><ul class="menu" id="menu">
-      <li><a href="#games" class="sel"><span class="ar" aria-hidden="true">▶</span>Play games <small>×6</small></a></li>
+      <li><a href="#games" class="sel"><span class="ar" aria-hidden="true">▶</span>Play games <small>×7</small></a></li>
       <li><a href="#notes"><span class="ar" aria-hidden="true">▶</span>Dev notes</a></li>
       <li><a href="#about"><span class="ar" aria-hidden="true">▶</span>About me</a></li>
       <li><a href="#contact"><span class="ar" aria-hidden="true">▶</span>Contact</a></li>
@@ -208,13 +216,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <section id="games" style="padding-top:50px">
   <div class="wrap">
     <div class="head rv">
-      <div><span class="mono kicker">Level select</span><h2>Six games. Pick one.</h2></div>
+      <div><span class="mono kicker">Level select</span><h2>Seven games. Pick one.</h2></div>
       <p>Each prototype asks one design question. Play it first, then open the design notes to see how I built it.</p>
     </div>
 
     <div class="levels">
+      <article class="lv feature rv" style="--c:#5fe3c8">
+        <a class="shot" href="last-signal/" target="_blank" rel="noopener" aria-label="Play Last Signal"><img src="img/last-signal.jpg" alt="Last Signal gameplay: the rescue ship near the mothership ring, an astronaut inside a teal oxygen ring, and edge-of-screen arrows pointing to other crew with their seconds of oxygen." loading="lazy"><span class="no">01</span><span class="eng">UNITY 6</span><span class="new">LATEST</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <div class="body">
+          <span class="genre">Space rescue · triage · game UI</span>
+          <h3>Last Signal</h3>
+          <p class="hook">Five astronauts. One small ship. Not enough oxygen. Decide who to save first, beam them aboard, and bring the survivors home.</p>
+          <ul class="feats"><li>HUD with oxygen rings and off-screen crew markers</li><li>Title, pause and results screens</li><li>Mouse, keyboard or gamepad, with a screen-shake option</li></ul>
+          <div class="keys"><kbd>WASD</kbd><kbd>Shift boost</kbd><kbd>slow down to rescue</kbd><kbd>Esc</kbd></div>
+          <div class="row"><a class="btn play" href="last-signal/" target="_blank" rel="noopener">▶ Play</a><button class="btn" data-open="d-signal">Design notes</button></div>
+        </div>
+      </article>
+
       <article class="lv rv" style="--c:#7fd8ff">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/soap-panic.html" target="_blank" rel="noopener" aria-label="Play Soap Panic"><img src="img/soap-panic.jpg" alt="Soap Panic: top-down bathroom course with a rubber duck on a bar of soap." loading="lazy"><span class="no">01</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/soap-panic.html" target="_blank" rel="noopener" aria-label="Play Soap Panic"><img src="img/soap-panic.jpg" alt="Soap Panic: top-down bathroom course with a rubber duck on a bar of soap." loading="lazy"><span class="no">02</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Physics · momentum</span>
           <h3>Soap Panic</h3>
@@ -225,7 +245,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ff8a5c">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/stack-splat.html" target="_blank" rel="noopener" aria-label="Play Stack &amp; Splat"><img src="img/stack-splat.jpg" alt="Stack and Splat: a tall wobbling pancake stack racing down a breakfast table." loading="lazy" style="object-position:center 70%"><span class="no">02</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/stack-splat.html" target="_blank" rel="noopener" aria-label="Play Stack &amp; Splat"><img src="img/stack-splat.jpg" alt="Stack and Splat: a tall wobbling pancake stack racing down a breakfast table." loading="lazy" style="object-position:center 70%"><span class="no">03</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Risk / reward · balance</span>
           <h3>Stack &amp; Splat</h3>
@@ -236,7 +256,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ff5d6c">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/checkpoint-run.html" target="_blank" rel="noopener" aria-label="Play Checkpoint Run"><img src="img/checkpoint-run.jpg" alt="Checkpoint Run: red pickup truck on a mountain highway with crates, traffic and cyan checkpoint gates." loading="lazy"><span class="no">03</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/checkpoint-run.html" target="_blank" rel="noopener" aria-label="Play Checkpoint Run"><img src="img/checkpoint-run.jpg" alt="Checkpoint Run: red pickup truck on a mountain highway with crates, traffic and cyan checkpoint gates." loading="lazy"><span class="no">04</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Arcade driving · time attack</span>
           <h3>Checkpoint Run</h3>
@@ -247,7 +267,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#ffcf4a">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/last-delivery.html" target="_blank" rel="noopener" aria-label="Play Last Delivery"><img src="img/last-delivery.jpg" alt="Last Delivery: a courier beside a timed yellow gate and cyan checkpoint." loading="lazy"><span class="no">04</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/last-delivery.html" target="_blank" rel="noopener" aria-label="Play Last Delivery"><img src="img/last-delivery.jpg" alt="Last Delivery: a courier beside a timed yellow gate and cyan checkpoint." loading="lazy"><span class="no">05</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Timing · interaction states</span>
           <h3>Last Delivery</h3>
@@ -258,7 +278,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#b48cff">
-        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/rescue-ranch.html" target="_blank" rel="noopener" aria-label="Play Rescue Ranch"><img src="img/rescue-ranch.jpg" alt="Rescue Ranch: top-down field with the player, animals and a chain multiplier panel." loading="lazy"><span class="no">05</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="https://harshbuilds-1.github.io/unity-games/rescue-ranch.html" target="_blank" rel="noopener" aria-label="Play Rescue Ranch"><img src="img/rescue-ranch.jpg" alt="Rescue Ranch: top-down field with the player, animals and a chain multiplier panel." loading="lazy"><span class="no">06</span><span class="eng">UNITY</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">Aim · streaks</span>
           <h3>Rescue Ranch</h3>
@@ -269,7 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       </article>
 
       <article class="lv rv" style="--c:#5fe3c8">
-        <a class="shot" href="platform-zero/" target="_blank" rel="noopener" aria-label="Play The Last Train"><img src="img/pz-hall.jpg" alt="The Last Train: VR station hall with departure boards and circle, triangle and square switches." loading="lazy"><span class="no">06</span><span class="eng">VR · SHAPESXR</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
+        <a class="shot" href="platform-zero/" target="_blank" rel="noopener" aria-label="Play The Last Train"><img src="img/pz-hall.jpg" alt="The Last Train: VR station hall with departure boards and circle, triangle and square switches." loading="lazy"><span class="no">07</span><span class="eng">VR · SHAPESXR</span><span class="ov" aria-hidden="true">▶ PLAY</span></a>
         <div class="body">
           <span class="genre">VR escape room · puzzle</span>
           <h3>The Last Train</h3>
@@ -279,7 +299,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         </div>
       </article>
     </div>
-    <p class="note rv">All six are learning prototypes made with AI assistance (credits are in each game's notes). Some use Unity Create with Code course assets, which keep their original licences. Built for a desktop browser and keyboard.</p>
+    <p class="note rv">All seven are learning prototypes made with AI assistance (credits are in each game's notes). Some use Unity Create with Code course assets, which keep their original licences. Built for a desktop browser and keyboard.</p>
   </div>
 </section>
 
@@ -293,7 +313,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="notes">
       <div class="dn rv" style="--c:#7fd8ff"><span class="from">From Soap Panic</span><h3>"Stop" needs a precise definition.</h3><p>To finish, the duck has to stay inside the ring for 1 second, within 0.78 units of the centre and moving slower than 0.9 units per second. Going too fast resets the hold. Those three numbers turned "park the duck" into a skill you can learn.</p></div>
       <div class="dn rv" style="--c:#ff5d6c"><span class="from">From Checkpoint Run</span><h3>"Build succeeded" doesn't mean the game works.</h3><p>The browser build loaded, but the road and truck were missing. After I fixed it, the bug came back because the host was serving an old build file. Now I always play the published version, not just the editor.</p></div>
-      <div class="dn rv" style="--c:#5fe3c8"><span class="from">From The Last Train</span><h3>Wrong answers shouldn't cost all your progress.</h3><p>In VR, a wrong switch plays a buzzer and keeps you in the same room. The wrong train destination opens one retry screen. Players can experiment without losing the whole journey.</p></div>
+      <div class="dn rv" style="--c:#5fe3c8"><span class="from">From Last Signal</span><h3>Bring the information to the player.</h3><p>Crew drift off screen, so arrows on the screen edge show each one's name, oxygen and distance. Danger is never colour alone: it also pulses and adds a "!". Players decide who to save without searching the map.</p></div>
     </div>
   </div>
 </section>
@@ -309,7 +329,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
     <div class="rv">
       <div class="stats">
-        <div><b>6</b><span>playable prototypes</span></div>
+        <div><b>7</b><span>playable prototypes</span></div>
         <div><b>Sep 2026</b><span>first opened Unity</span></div>
         <div><b>4+ yrs</b><span>web development, 2018–2023</span></div>
         <div><b>MPS</b><span>Digital Media, expected Dec 2027</span></div>
@@ -347,6 +367,30 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <footer><div class="wrap"><span>© 2026 Harsh Kumar · Surrey / Metro Vancouver, BC</span><span>Prototypes made with AI assistance and credited in each game's notes.</span></div></footer>
 
 <!-- ============ DESIGN NOTES DIALOGS ============ -->
+<dialog class="dlg" id="d-signal" style="--c:#5fe3c8" aria-labelledby="t-signal">
+  <div class="top"><img src="img/last-signal-title.jpg" alt="Last Signal title screen over a drifting asteroid field."><button class="x" aria-label="Close">×</button></div>
+  <div class="in">
+    <span class="mono" style="color:var(--c)">01 · Unity 6 · vertical slice · Nov 2026</span>
+    <h3 id="t-signal">Last Signal</h3>
+    <p class="q">Can a HUD help a player make fast, fair decisions about who to save first?</p>
+    <h4>The rules</h4>
+    <div class="tune">
+      <div><b>5</b><span>astronauts, each with their own oxygen (62–120 s)</span></div>
+      <div><b>8 m</b><span>beam range, and the ship must be under 9 m/s to lock</span></div>
+      <div><b>1.1 s</b><span>of steady beam to pull someone aboard</span></div>
+      <div><b>3</b><span>hull points; only hits above 7 m/s hurt</span></div>
+    </div>
+    <h4>What the HUD does</h4>
+    <ul><li>An oxygen ring over each astronaut that empties as time runs out, with the seconds shown</li><li>Arrows on the screen edge for crew you can't see, with name, oxygen and distance</li><li>Danger never relies on colour alone: low oxygen turns red, pulses and adds "!"; low hull adds a red screen edge and "HULL CRITICAL"</li><li>"Too fast, slow down to lock the beam" when you're close but moving too quickly</li></ul>
+    <h4>Playtest → changes</h4>
+    <ul><li>Gentle bumps were costing hull, so damage now starts at 7 m/s (was 4)</li><li>VEGA ran out before a first-time player could read the HUD, so she got +10 s</li><li>Edge labels were cut off, so they now flip to the side with room</li><li>A mouse click could leave keyboard and gamepad players stuck in menus; pressing a direction now re-selects a button</li></ul>
+    <h4>Built</h4>
+    <p>Everything except the camera and light is built from code at runtime: low-poly rocks, the docking ring, the HUD and the menus. All sound is synthesised in code. Glow uses soft additive "halo" sprites instead of a bloom pass. The web build is 7.7 MB.</p>
+    <div class="btns"><a class="btn go" href="last-signal/" target="_blank" rel="noopener">▶ Play Last Signal</a></div>
+    <p class="credit">Design direction and playtesting by Harsh Kumar. Code written with AI assistance (Claude) and documented so every system can be explained. The win path and gamepad hardware are not tested yet.</p>
+  </div>
+</dialog>
+
 <dialog class="dlg" id="d-soap" style="--c:#7fd8ff" aria-labelledby="t-soap">
   <div class="top"><img src="img/soap-panic.jpg" alt="Soap Panic full course from above." style="object-position:center 40%"><button class="x" aria-label="Close">×</button></div>
   <div class="in">
