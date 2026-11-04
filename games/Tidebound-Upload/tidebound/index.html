@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Tidebound — Harsh Kumar</title>
+<meta name="description" content="An island where the sea rises and falls every 90 seconds. A Unity exploration game designed with the MDA framework. Plays in the browser with keyboard and mouse, gamepad or touch.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tidebound — read the tide to reach what it hides">
+<meta property="og:description" content="A Unity exploration game by Harsh Kumar, built around one rule: the tide changes the map. Work in progress, playable in the browser.">
+<meta property="og:image" content="https://harshbuilds-1.github.io/games/img/tidebound.jpg">
+<meta property="og:url" content="https://harshbuilds-1.github.io/games/tidebound/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+html,body{margin:0;height:100%;background:#0b2230;overflow:hidden;font-family:system-ui,sans-serif;color:#fdf8eb}
+#unity-canvas{position:fixed;inset:0;width:100%;height:100%;display:block;outline:none;touch-action:none}
+#loader{position:fixed;inset:0;display:grid;place-items:center;text-align:center;letter-spacing:.35em;font-size:14px;background:linear-gradient(#a9cfe0,#2a6f8a)}
+#bar{width:min(320px,70vw);height:3px;background:rgba(255,255,255,.25);margin:18px auto 0;overflow:hidden}
+#fill{height:100%;width:0;background:#ffc252;transition:width .2s}
+#hint{position:fixed;bottom:14px;width:100%;text-align:center;font-size:12px;color:#d7e6ec;letter-spacing:.08em;text-shadow:0 1px 3px #0008}
+</style>
+</head>
+<body>
+<canvas id="unity-canvas" tabindex="-1"></canvas>
+<div id="loader"><div>TIDEBOUND<div id="bar"><div id="fill"></div></div></div></div>
+<div id="hint">Keyboard and mouse, gamepad or touch · click the game to start</div>
+<script src="Build/WebGL.loader.js"></script>
+<script>
+if (matchMedia('(pointer: coarse)').matches) document.querySelector('#hint').textContent = 'Touch controls · play in landscape';
+createUnityInstance(document.querySelector('#unity-canvas'), {
+  dataUrl: 'Build/WebGL.data.unityweb', frameworkUrl: 'Build/WebGL.framework.js.unityweb', codeUrl: 'Build/WebGL.wasm.unityweb',
+  companyName: 'Harsh Kumar', productName: 'Tidebound', productVersion: '0.1',
+  matchWebGLToCanvasSize: true, devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2)
+}, p => { document.querySelector('#fill').style.width = (p * 100) + '%'; })
+.then(() => { document.querySelector('#loader').remove(); setTimeout(() => document.querySelector('#hint').remove(), 6000); document.querySelector('#unity-canvas').focus(); })
+.catch(e => { document.querySelector('#loader').textContent = 'This game needs a browser with WebGL 2.'; });
+</script>
+</body>
+</html>
