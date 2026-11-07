@@ -1,0 +1,10 @@
+{
+  "name": "Tide Rush",
+  "short_name": "Tide Rush",
+  "description": "Outrun the wave. A Unity endless runner by Harsh Kumar.",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#2a1c3a",
+  "theme_color": "#2a1c3a"
+}
