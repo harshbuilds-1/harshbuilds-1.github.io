@@ -1,0 +1,1893 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0C0910">
+<meta name="description" content="A food-first, kidney-safe weight gain plan for Indian women: a 3D thali of the day, a health check against Indian cut-offs, age-based advice, warning signs and a shake builder.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Healthy Weight Gain Plan">
+<meta property="og:description" content="Gain muscle, not belly fat. Indian meals, one homemade shake, and a health check that reads your reports against Indian cut-offs.">
+<meta property="og:url" content="https://harshbuilds-1.github.io/weight-gain-plan/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='38%25' cy='32%25' r='75%25'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='.5' stop-color='%23b9b6c4'/%3E%3Cstop offset='1' stop-color='%234f4a5c'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='16' r='7' fill='%23F2D46A'/%3E%3Ccircle cx='46' cy='38' r='8' fill='%23EDB54E'/%3E%3Ccircle cx='19' cy='38' r='9' fill='%23D4C1EC'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Healthy Weight Gain Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Geist:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap">
+<style>
+/* Layout: one deliberate dark "night kitchen" world (single theme). Mobile: hero text, then a sticky 3D steel-thali stage
+   with meal cards scrolling beneath it; desktop: stage pinned left, story right. Glass panels hold the tools;
+   four semantic levels (normal / watch / act / urgent) carry every health status. */
+@property --ang { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+:root {
+  color-scheme: dark;
+  --bg: #0C0910;
+  --panel: #16111C;
+  --panel-2: #1D1725;
+  --ink: #F5F0FA;
+  --muted: #ADA2B9;
+  --faint: #807590;
+  --line: rgba(236, 225, 255, 0.10);
+  --line-2: rgba(236, 225, 255, 0.20);
+  --accent: #C6AAFF;
+  --accent-2: #8E5BE0;
+  --haldi: #F6B93B;
+  --ok: #4ED39A;
+  --watch: #F5C843;
+  --act: #FF8D42;
+  --urgent: #FF5A6E;
+  --shadow: rgba(0, 0, 0, 0.55);
+  --f-poha: #F2D46A;
+  --f-fruit: #A9D18E;
+  --f-dal: #EDB54E;
+  --f-shake: #D4C1EC;
+  --f-paneer: #E99A6C;
+  --i-milk: #F4F0E8;
+  --i-banana: #F4DC7A;
+  --i-oats: #DCC7A1;
+  --i-pb: #C08A55;
+  --i-whey: #D4C1EC;
+  --i-sattu: #D8C08F;
+  --i-curd: #FFFDF8;
+  --i-dates: #8A4E36;
+  --on-food: #22182B;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: clip;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+}
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; text-wrap: balance; line-height: 1.1; }
+p, ul, ol, dl, dd, figure { margin: 0; }
+a { color: var(--accent); text-underline-offset: 3px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+.num { font-variant-numeric: tabular-nums; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.progress {
+  position: fixed; z-index: 60; left: 0; right: 0; top: env(safe-area-inset-top, 0px); height: 2px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent), var(--haldi)); transform-origin: 0 50%; transform: scaleX(0);
+}
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 calc(150px + env(safe-area-inset-bottom, 0px));
+}
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 18px 4px; font-size: 0.82rem; color: var(--muted); }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 0.95rem; letter-spacing: -0.01em; }
+.brand-mark {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #FFFFFF, #B9B6C4 45%, #4F4A5C 100%);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+.eyebrow { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+
+/* ---------- Story: hero + 3D thali ---------- */
+.story { position: relative; }
+.intro { display: flex; flex-direction: column; gap: 20px; padding-block: 24px 30px; position: relative; z-index: 2; }
+.h1 { font-size: clamp(2.8rem, 12.4vw, 6rem); font-weight: 800; line-height: 0.94; letter-spacing: -0.045em; }
+.h1 .line { display: block; overflow: hidden; padding-bottom: 0.08em; }
+.h1 .line > span { display: inline-block; animation: rise 1s cubic-bezier(.2,.8,.2,1) backwards; }
+.h1 .line:nth-child(2) > span { animation-delay: 0.12s; }
+.h1 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--accent); font-size: 1.08em; letter-spacing: -0.02em; }
+@keyframes rise { from { transform: translateY(108%); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } }
+.lede { font-size: 1.06rem; color: var(--muted); max-width: 46ch; animation: fadeUp 0.9s 0.3s backwards; }
+.hero-stats {
+  list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); animation: fadeUp 0.9s 0.42s backwards;
+}
+.hero-stats li { padding: 14px 10px 14px 0; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hero-stats li + li { padding-left: 12px; border-left: 1px solid var(--line); }
+.hero-stats b { font-family: var(--font-display); font-size: clamp(1.1rem, 5vw, 1.6rem); font-weight: 700; letter-spacing: -0.02em; }
+.hero-stats span { font-size: 0.78rem; color: var(--muted); line-height: 1.35; }
+.ctas { display: flex; flex-wrap: wrap; gap: 10px; animation: fadeUp 0.9s 0.54s backwards; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 999px;
+  font-weight: 600; font-size: 0.95rem; text-decoration: none; cursor: pointer; border: 0;
+  transition: transform 0.3s cubic-bezier(.3,.7,.2,1), background 0.25s, box-shadow 0.25s, color 0.25s;
+}
+.btn.primary { background: var(--ink); color: var(--bg); box-shadow: 0 12px 34px rgba(198, 170, 255, 0.28); }
+.btn.ghost { color: var(--ink); border: 1px solid var(--line-2); background: rgba(255, 255, 255, 0.03); }
+.btn.small { padding: 10px 16px; font-size: 0.85rem; }
+@media (hover: hover) { .btn.ghost:hover { background: rgba(255, 255, 255, 0.08); } }
+.scroll-cue { display: none; align-items: center; gap: 10px; font-size: 0.8rem; color: var(--faint); animation: fadeUp 0.9s 0.66s backwards; }
+.scroll-cue span { width: 30px; height: 1px; background: var(--line-2); position: relative; overflow: hidden; }
+.scroll-cue span::after { content: ""; position: absolute; inset: 0; background: var(--accent); transform: translateX(-100%); animation: cue 2.4s ease-in-out infinite; }
+@keyframes cue { 60%, 100% { transform: translateX(100%); } }
+
+.stage {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 1; height: 58vh; height: 58svh; overflow: hidden;
+  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 84%, rgba(12, 9, 16, 0) 100%);
+}
+.aura {
+  position: absolute; inset: 14% 8% 10%; pointer-events: none; filter: blur(34px); opacity: 0.9;
+  background:
+    radial-gradient(closest-side at 45% 50%, rgba(142, 91, 224, 0.42), transparent 75%),
+    radial-gradient(closest-side at 70% 70%, rgba(246, 185, 59, 0.16), transparent 70%);
+  animation: drift 16s ease-in-out infinite alternate;
+}
+@keyframes drift { to { transform: translate3d(4%, -3%, 0) scale(1.06); } }
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; cursor: grab; }
+.thali-2d { display: none; position: absolute; left: 50%; top: 48%; width: min(84%, 380px); transform: translate(-50%, -50%); overflow: visible; }
+.stage.no3d canvas { display: none; }
+.stage.no3d .thali-2d { display: block; }
+.thali-2d .k2d { transition: opacity 0.3s, transform 0.4s cubic-bezier(.34,1.56,.64,1); transform-box: fill-box; transform-origin: center; cursor: pointer; }
+.thali-2d.has-sel .k2d { opacity: 0.35; }
+.thali-2d .k2d.on { opacity: 1; transform: scale(1.1); }
+.thali-2d .k2d text { font: 600 11px var(--font-body); fill: var(--on-food); text-anchor: middle; pointer-events: none; }
+.stage-top {
+  position: absolute; top: 12px; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; justify-content: space-between; align-items: center; gap: 10px; pointer-events: none;
+}
+.tag {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  padding: 6px 10px; border-radius: 999px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--line);
+}
+.hint { font-size: 0.72rem; color: var(--faint); transition: opacity 0.6s; }
+.hint.gone { opacity: 0; }
+.caption {
+  position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px;
+  padding: 10px 18px 10px 14px; border-radius: 999px; white-space: nowrap;
+  background: rgba(22, 17, 28, 0.74); border: 1px solid var(--line-2); box-shadow: 0 14px 34px var(--shadow);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+}
+.cap-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); transition: background 0.4s; flex: none; }
+.cap-text { display: flex; flex-direction: column; line-height: 1.25; }
+.cap-time { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.cap-nums { font-size: 0.88rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cap-nums b { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); }
+
+.steps { position: relative; z-index: 0; padding-block: 2vh 14vh; }
+.step { min-height: 52vh; min-height: 52svh; display: flex; align-items: center; }
+.step-card {
+  width: 100%; padding: 20px; border-radius: 24px; background: var(--panel); border: 1px solid var(--line);
+  opacity: 0.5; transform: scale(0.97);
+  transition: transform 0.6s cubic-bezier(.3,.7,.2,1), opacity 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+.step.is-active .step-card { opacity: 1; transform: none; border-color: var(--line-2); box-shadow: 0 24px 60px -26px rgba(142, 91, 224, 0.6); }
+.step-time { display: flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.step-time .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.step h3 { font-size: clamp(1.4rem, 6vw, 2rem); font-weight: 700; letter-spacing: -0.02em; margin-top: 10px; }
+.step-desc { color: var(--muted); margin-top: 6px; }
+.step-nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 18px 0 12px; }
+.step-nums div { display: flex; flex-direction: column-reverse; gap: 2px; min-width: 0; }
+.step-nums dt { font-size: 0.74rem; color: var(--faint); }
+.step-nums dd { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.share { height: 6px; border-radius: 99px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
+.share i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+.step.total .step-card { background: linear-gradient(150deg, rgba(142, 91, 224, 0.24), rgba(246, 185, 59, 0.07) 70%), var(--panel); }
+.step.total h3 { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+.step.total .btn { margin-top: 16px; }
+
+@media (min-width: 960px) {
+  .story {
+    display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); column-gap: 64px;
+    grid-template-areas: "stage intro" "stage steps";
+  }
+  .stage { grid-area: stage; top: 0; height: 100vh; margin: 0; background: none; align-self: start; }
+  .intro { grid-area: intro; min-height: 88vh; justify-content: center; padding-block: 40px; }
+  .scroll-cue { display: flex; }
+  .steps { grid-area: steps; padding-bottom: 32vh; }
+  .step { min-height: 74vh; }
+  .stage-top { left: 24px; right: 24px; top: 24px; }
+  .caption { bottom: 15%; }
+}
+
+/* ---------- Sections ---------- */
+.sec { padding-top: 104px; display: flex; flex-direction: column; gap: 26px; scroll-margin-top: 8px; }
+.sec-head { display: flex; flex-direction: column; gap: 12px; max-width: 780px; }
+.sec-head h2 { font-size: clamp(2.2rem, 9.4vw, 3.9rem); font-weight: 800; letter-spacing: -0.04em; line-height: 0.98; }
+.sec-head h2 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--accent); font-size: 1.07em; letter-spacing: -0.01em; }
+.sec-head p { color: var(--muted); font-size: 1.02rem; max-width: 62ch; }
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.014));
+  border: 1px solid var(--line); border-radius: 26px; padding: 20px;
+}
+.sub-h { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+
+/* ---------- You ---------- */
+.you-grid { display: grid; gap: 16px; }
+.controls { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.slider { display: flex; flex-direction: column; gap: 8px; }
+.slider-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.slider-top label, .group-label { font-size: 0.86rem; font-weight: 600; color: var(--muted); }
+.slider-top output { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 34px; background: transparent; cursor: pointer; margin: 0; }
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px; border-radius: 99px;
+  background: linear-gradient(to right, var(--accent) var(--p, 50%), rgba(255, 255, 255, 0.10) var(--p, 50%));
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 28px; height: 28px; margin-top: -11px; border-radius: 50%; background: var(--ink);
+  box-shadow: 0 0 0 6px rgba(198, 170, 255, 0.18), 0 6px 16px var(--shadow); transition: transform 0.15s, box-shadow 0.2s;
+}
+input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.12); box-shadow: 0 0 0 10px rgba(198, 170, 255, 0.22), 0 6px 16px var(--shadow); }
+input[type="range"]::-moz-range-track { height: 6px; border-radius: 99px; background: rgba(255, 255, 255, 0.10); }
+input[type="range"]::-moz-range-progress { height: 6px; border-radius: 99px; background: var(--accent); }
+input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border: 0; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 6px rgba(198, 170, 255, 0.18); }
+.seg { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 4px; background: rgba(255, 255, 255, 0.05); border-radius: 16px; border: 1px solid var(--line); }
+.seg input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.seg label {
+  text-align: center; font-size: 0.84rem; font-weight: 600; color: var(--muted); padding: 11px 6px; border-radius: 12px; line-height: 1.25;
+  cursor: pointer; transition: background 0.25s, color 0.25s;
+}
+.seg input:checked + label { background: var(--ink); color: var(--bg); }
+.seg input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+.seg-desc { font-size: 0.84rem; color: var(--faint); }
+.results { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.eat {
+  position: relative; border-radius: 26px; padding: 22px 22px 20px; overflow: hidden; isolation: isolate;
+  background: radial-gradient(130% 120% at 0% 0%, rgba(142, 91, 224, 0.42), transparent 60%), var(--panel-2);
+}
+.eat::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; z-index: -1;
+  background: conic-gradient(from var(--ang), rgba(198, 170, 255, 0.08) 0 55%, var(--accent) 72%, var(--haldi) 82%, rgba(198, 170, 255, 0.08) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  animation: spin 7s linear infinite;
+}
+@keyframes spin { to { --ang: 360deg; } }
+.eat .lbl { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.eat .val { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(2.6rem, 12vw, 4rem); letter-spacing: -0.04em; line-height: 1.02; font-variant-numeric: tabular-nums; margin-top: 6px; }
+.eat .unit { color: var(--muted); }
+.eat-note { margin-top: 10px; font-size: 0.88rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.stat { background: rgba(255, 255, 255, 0.04); border: 1px solid var(--line); border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.stat .lbl { font-size: 0.76rem; color: var(--faint); }
+.stat .val { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.stat .val small { font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.reset { align-self: flex-start; background: none; border: 0; padding: 4px 0; color: var(--accent); font-weight: 600; font-size: 0.86rem; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+.age-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; margin-top: 18px; }
+.age-head p { color: var(--muted); font-size: 0.92rem; }
+.bands {
+  position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: min(84%, 310px); gap: 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 2px 12px; overscroll-behavior-x: contain;
+}
+.bands::-webkit-scrollbar { display: none; }
+.band {
+  scroll-snap-align: start; border-radius: 22px; padding: 18px; background: var(--panel); border: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 12px; opacity: 0.62; min-width: 0;
+  transition: opacity 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+.band.is-you { opacity: 1; border-color: rgba(198, 170, 255, 0.55); box-shadow: 0 0 0 1px rgba(198, 170, 255, 0.2), 0 24px 50px -28px rgba(142, 91, 224, 0.8); }
+.band-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.band-age { font-family: var(--font-display); font-size: 1.9rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.you-tag { display: none; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bg); background: var(--accent); padding: 4px 9px; border-radius: 999px; }
+.band.is-you .you-tag { display: inline-block; }
+.band h4 { font-size: 1.15rem; font-weight: 700; }
+.band dl { display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; }
+.band dl div { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 8px; }
+.band dt { color: var(--faint); font-weight: 500; }
+.band dd { color: var(--ink); }
+
+@media (min-width: 900px) {
+  .you-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: stretch; }
+  .controls.panel { padding: 28px; }
+}
+@media (min-width: 960px) {
+  .bands { grid-auto-flow: row; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: visible; }
+}
+
+/* ---------- Health check ---------- */
+.levels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.levels div { display: flex; gap: 10px; align-items: flex-start; padding: 12px; border-radius: 16px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--line); min-width: 0; }
+.levels b { display: block; font-size: 0.9rem; }
+.levels span { font-size: 0.78rem; color: var(--muted); line-height: 1.35; }
+.ldot { width: 12px; height: 12px; border-radius: 50%; margin-top: 4px; flex: none; }
+.ldot.ok { background: var(--ok); } .ldot.watch { background: var(--watch); } .ldot.act { background: var(--act); } .ldot.urgent { background: var(--urgent); }
+@media (min-width: 900px) { .levels { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.summary { display: grid; gap: 18px; position: relative; overflow: hidden; }
+.summary-main { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 18px; align-items: center; }
+.donut { width: 116px; height: 116px; }
+.donut circle { fill: none; stroke-width: 12; }
+.donut .track { stroke: rgba(255, 255, 255, 0.07); }
+.donut .seg-arc { transition: stroke-dasharray 0.7s cubic-bezier(.3,.7,.2,1), stroke-dashoffset 0.7s cubic-bezier(.3,.7,.2,1); }
+.donut text { fill: var(--ink); text-anchor: middle; }
+.donut .d-big { font: 800 30px var(--font-display); }
+.donut .d-small { font: 500 10px var(--font-body); fill: var(--muted); }
+.verdict-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; }
+.verdict-text { color: var(--muted); font-size: 0.92rem; margin-top: 6px; }
+.summary[data-tone="ok"] .verdict-title { color: var(--ok); }
+.summary[data-tone="watch"] .verdict-title { color: var(--watch); }
+.summary[data-tone="act"] .verdict-title { color: var(--act); }
+.summary[data-tone="urgent"] .verdict-title { color: var(--urgent); }
+.kidney {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: center; padding: 14px; border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04); border: 1px solid var(--line); font-size: 0.92rem;
+}
+.kidney-icon { width: 34px; height: 34px; border-radius: 12px; display: grid; place-items: center; background: rgba(255, 255, 255, 0.06); }
+.kidney-icon svg { width: 20px; height: 20px; }
+.kidney[data-tone="ok"] .kidney-icon { background: rgba(78, 211, 154, 0.16); color: var(--ok); }
+.kidney[data-tone="watch"] .kidney-icon { background: rgba(245, 200, 67, 0.16); color: var(--watch); }
+.kidney[data-tone="act"] .kidney-icon { background: rgba(255, 141, 66, 0.18); color: var(--act); }
+.kidney[data-tone="none"] .kidney-icon { color: var(--faint); }
+.kidney b { display: block; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.sum-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ex-state { font-size: 0.82rem; color: var(--faint); margin-right: auto; }
+.copy-box { width: 100%; min-height: 160px; font: 0.82rem/1.5 var(--font-body); color: var(--ink); background: var(--panel); border: 1px solid var(--line-2); border-radius: 14px; padding: 12px; }
+@media (min-width: 720px) { .summary { padding: 26px; } .summary-main { grid-template-columns: 140px minmax(0, 1fr); } .donut { width: 140px; height: 140px; } }
+
+.mk-groups { display: flex; flex-direction: column; gap: 26px; }
+.mk-group-h { display: flex; align-items: center; gap: 12px; font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.mk-group-h::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.mk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 12px; }
+.mk {
+  position: relative; overflow: hidden; border-radius: 22px; padding: 16px 16px 14px; background: var(--panel); border: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 10px; min-width: 0; transition: border-color 0.4s;
+  --lvl: var(--faint); --glow: transparent;
+}
+.mk::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(110% 70% at 100% 0%, var(--glow), transparent 62%); transition: background 0.5s; }
+.mk[data-level="ok"] { --lvl: var(--ok); --glow: rgba(78, 211, 154, 0.12); }
+.mk[data-level="watch"] { --lvl: var(--watch); --glow: rgba(245, 200, 67, 0.13); }
+.mk[data-level="act"] { --lvl: var(--act); --glow: rgba(255, 141, 66, 0.16); border-color: rgba(255, 141, 66, 0.28); }
+.mk[data-level="urgent"] { --lvl: var(--urgent); --glow: rgba(255, 90, 110, 0.2); border-color: rgba(255, 90, 110, 0.45); }
+.mk > * { position: relative; }
+.mk-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.mk h4 { font-size: 1.05rem; font-weight: 700; }
+.mk-sub { font-size: 0.76rem; color: var(--faint); margin-top: 2px; }
+.lvl { font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; white-space: nowrap; letter-spacing: 0.02em; color: var(--faint); background: rgba(255, 255, 255, 0.06); }
+.lvl[data-level="ok"] { color: var(--ok); background: rgba(78, 211, 154, 0.14); }
+.lvl[data-level="watch"] { color: var(--watch); background: rgba(245, 200, 67, 0.14); }
+.lvl[data-level="act"] { color: var(--act); background: rgba(255, 141, 66, 0.16); }
+.lvl[data-level="urgent"] { color: #FFFFFF; background: var(--urgent); animation: pulse 1.8s ease-in-out infinite; }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px rgba(255, 90, 110, 0); } 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 90, 110, 0.45); } }
+.mk-val { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; min-height: 44px; }
+.mk-in {
+  width: 4.4em; font: 700 1.9rem/1.1 var(--font-display); letter-spacing: -0.02em; color: var(--ink); background: transparent;
+  border: 0; border-bottom: 1.5px dashed var(--line-2); border-radius: 0; padding: 2px 0; -moz-appearance: textfield; appearance: textfield;
+  font-variant-numeric: tabular-nums;
+}
+.mk-in::-webkit-outer-spin-button, .mk-in::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.mk-in:focus { outline: none; border-bottom: 1.5px solid var(--accent); }
+.mk-in::placeholder { color: var(--faint); }
+.mk-in.short { width: 2.6em; }
+.mk-sep { font: 700 1.6rem var(--font-display); color: var(--faint); }
+.mk-out { font: 700 1.9rem/1.1 var(--font-display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.unit { font-size: 0.82rem; color: var(--faint); }
+.mk-calc { width: 100%; font-size: 0.84rem; color: var(--muted); }
+.mk-calc b { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); }
+.zbar { position: relative; height: 8px; margin-top: 4px; }
+.zones { display: flex; gap: 2px; height: 100%; border-radius: 99px; overflow: hidden; }
+.z { height: 100%; opacity: 0.8; }
+.z-ok { background: var(--ok); } .z-watch { background: var(--watch); } .z-act { background: var(--act); } .z-urgent { background: var(--urgent); }
+.zmark {
+  position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; border-radius: 50%; background: var(--ink);
+  border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--lvl), 0 4px 12px var(--shadow); transform: translate(-50%, -50%);
+  transition: left 0.6s cubic-bezier(.3,.7,.2,1), box-shadow 0.4s;
+}
+.zticks { position: relative; height: 14px; font-size: 0.66rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+.zticks span { position: absolute; top: 0; transform: translateX(-50%); }
+.mk-msg { font-size: 0.88rem; color: var(--ink); line-height: 1.45; }
+.mk-src { font-size: 0.72rem; color: var(--faint); margin-top: auto; }
+
+/* ---------- Plan: shake + weeks ---------- */
+.shake { display: grid; gap: 24px; }
+.glass-row { display: flex; gap: 22px; align-items: flex-end; min-width: 0; }
+.glass-wrap { position: relative; width: 134px; height: 300px; flex: none; }
+.glass { position: absolute; inset: 0; background: rgba(255, 255, 255, 0.05); clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%); }
+.liquid { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column-reverse; }
+.layer {
+  height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; white-space: nowrap;
+  font-size: 0.66rem; font-weight: 600; color: var(--on-food); border-top: 1px solid rgba(0, 0, 0, 0.08);
+  transition: height 0.7s cubic-bezier(.3,.8,.2,1);
+}
+.layer[data-ing="dates"], .layer[data-ing="pb"] { color: #FFF6EE; }
+.layer.tiny span { opacity: 0; }
+.layer span { transition: opacity 0.3s; }
+.wave { position: absolute; left: 0; width: 200%; height: 10px; bottom: 0; transform: translateY(2px); transition: bottom 0.9s cubic-bezier(.3,.8,.2,1), color 0.4s; animation: wave 3.4s linear infinite; pointer-events: none; }
+.wave svg { display: block; width: 100%; height: 100%; }
+@keyframes wave { to { transform: translate(-50%, 2px); } }
+.glass-outline { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.glass-outline polygon { fill: none; stroke: rgba(255, 255, 255, 0.28); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.gloss { position: absolute; left: 20%; top: 4%; bottom: 8%; width: 8%; border-radius: 99px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.16), transparent 85%); pointer-events: none; }
+.totals { display: flex; flex-direction: column; gap: 10px; min-width: 0; padding-bottom: 6px; }
+.totals .kcal { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.8rem, 13vw, 4rem); line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.totals .kcal small { display: block; font-family: var(--font-body); font-size: 0.85rem; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-top: 6px; }
+.totals .pro { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.totals .pro small { font-family: var(--font-body); font-size: 0.85rem; font-weight: 500; color: var(--muted); }
+.shake-note { font-size: 0.86rem; color: var(--muted); }
+.shake-controls { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.toggles { display: flex; flex-wrap: wrap; gap: 8px; }
+.tog {
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px 9px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line-2); background: rgba(255, 255, 255, 0.05); font-size: 0.86rem; font-weight: 600;
+  transition: background 0.2s, color 0.2s, transform 0.15s, opacity 0.2s;
+}
+.tog:active { transform: scale(0.95); }
+.tog i { width: 14px; height: 14px; border-radius: 50%; }
+.tog[aria-pressed="false"] { color: var(--faint); background: transparent; text-decoration: line-through; }
+.tog[aria-pressed="false"] i { opacity: 0.3; }
+.recipe-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; }
+.recipe-list li { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 10px; }
+.recipe-list b { font-weight: 600; }
+.recipe-list span { color: var(--muted); }
+.small { font-size: 0.86rem; }
+.muted { color: var(--muted); }
+@media (min-width: 760px) {
+  .shake { grid-template-columns: auto minmax(0, 1fr); gap: 48px; align-items: center; padding: 30px; }
+  .glass-wrap { width: 150px; height: 330px; }
+}
+
+.tl { list-style: none; padding: 0 0 0 34px; position: relative; display: flex; flex-direction: column; gap: 30px; max-width: 720px; view-timeline-name: --tl; }
+.tl::before, .tl::after { content: ""; position: absolute; left: 9px; top: 8px; bottom: 8px; width: 2px; border-radius: 2px; }
+.tl::before { background: var(--line-2); }
+.tl::after { background: linear-gradient(var(--accent), var(--haldi)); transform-origin: top; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .tl::after { animation: grow linear both; animation-timeline: --tl; animation-range: cover 20% cover 60%; }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  }
+}
+.tl li { position: relative; display: flex; flex-direction: column; gap: 6px; }
+.tl li::before { content: ""; position: absolute; left: -34px; top: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+.tl .when { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--haldi); }
+.tl h3 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; }
+.tl p { color: var(--muted); font-size: 0.95rem; }
+.test-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.test-chips span { font-size: 0.8rem; padding: 5px 10px; border-radius: 10px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--line); color: var(--muted); }
+.test-chips b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Buy ---------- */
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.82rem; color: var(--muted); align-items: center; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.cards {
+  position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: min(84%, 320px); gap: 14px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 6px 2px 18px; overscroll-behavior-x: contain;
+}
+.cards::-webkit-scrollbar { display: none; }
+.card {
+  scroll-snap-align: start; background: var(--panel); border: 1px solid var(--line); border-radius: 24px; padding: 20px;
+  display: flex; flex-direction: column; gap: 12px; min-width: 0; transition: transform 0.3s cubic-bezier(.3,.7,.2,1), border-color 0.3s;
+  transform-style: preserve-3d;
+}
+.card h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+.card p { font-size: 0.9rem; color: var(--muted); }
+.card .proof { font-size: 0.82rem; color: var(--ok); font-weight: 600; margin-top: auto; }
+.card.bad { border-color: rgba(255, 90, 110, 0.3); }
+.chip { align-self: flex-start; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
+.chip.good { color: var(--ok); background: rgba(78, 211, 154, 0.14); }
+.chip.neutral { color: var(--muted); background: rgba(255, 255, 255, 0.07); }
+.chip.bad { color: var(--urgent); background: rgba(255, 90, 110, 0.15); }
+.macro { display: flex; flex-direction: column; gap: 6px; }
+.bar { display: flex; height: 12px; border-radius: 99px; overflow: hidden; background: rgba(255, 255, 255, 0.07); }
+.bar .p { background: var(--accent); transition: width 0.9s cubic-bezier(.3,.7,.2,1); }
+.bar .c { background: var(--haldi); transition: width 0.9s 0.1s cubic-bezier(.3,.7,.2,1); }
+.macro-legend { display: flex; justify-content: space-between; gap: 8px; font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.brand-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.brand-list span { font-size: 0.8rem; font-weight: 600; padding: 5px 10px; border-radius: 10px; background: rgba(198, 170, 255, 0.12); color: var(--accent); }
+.dots { display: flex; justify-content: center; gap: 8px; }
+.dots button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 99px; background: var(--line-2); cursor: pointer; transition: width 0.3s, background 0.3s; }
+.dots button[aria-current="true"] { width: 26px; background: var(--accent); }
+.checks { list-style: none; padding: 0; display: grid; gap: 12px; }
+.checks li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; align-items: start; font-size: 0.93rem; color: var(--muted); }
+.checks li::before {
+  content: ""; width: 20px; height: 20px; margin-top: 1px; background: var(--ok);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4.5 10.5l3.5 3.5 7.5-8' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4.5 10.5l3.5 3.5 7.5-8' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+}
+@media (min-width: 760px) { .checks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; } }
+
+/* ---------- Safety ---------- */
+.ladder { list-style: none; padding: 0; display: grid; gap: 12px; }
+.rung {
+  --c: var(--ok); --tint: rgba(78, 211, 154, 0.14);
+  border-radius: 24px; padding: 18px; border: 1px solid var(--line);
+  background: linear-gradient(160deg, var(--tint), transparent 70%), var(--panel);
+  display: flex; flex-direction: column; gap: 12px; min-width: 0;
+}
+.rung[data-level="watch"] { --c: var(--watch); --tint: rgba(245, 200, 67, 0.13); }
+.rung[data-level="act"] { --c: var(--act); --tint: rgba(255, 141, 66, 0.16); }
+.rung[data-level="urgent"] { --c: var(--urgent); --tint: rgba(255, 90, 110, 0.22); border-color: rgba(255, 90, 110, 0.4); }
+.rung-top { display: flex; align-items: center; gap: 10px; }
+.rung-top .ldot { margin: 0; background: var(--c); box-shadow: 0 0 14px var(--c); }
+.rung-n { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c); }
+.rung h3 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.rung ul { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; color: var(--muted); font-size: 0.9rem; }
+.rung ul li::marker { color: var(--c); }
+.sos { display: flex; gap: 10px; }
+.sos div { flex: 1; border-radius: 16px; padding: 10px 12px; background: rgba(255, 90, 110, 0.14); border: 1px solid rgba(255, 90, 110, 0.35); }
+.sos b { display: block; font-family: var(--font-display); font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; line-height: 1; user-select: all; }
+.sos span { font-size: 0.74rem; color: var(--muted); }
+@media (min-width: 1000px) { .ladder { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.safety-grid { display: grid; gap: 16px; margin-top: 8px; }
+.never { border-radius: 24px; padding: 20px; background: linear-gradient(160deg, rgba(255, 90, 110, 0.14), transparent 70%), var(--panel); border: 1px solid rgba(255, 90, 110, 0.25); display: flex; flex-direction: column; gap: 14px; }
+.never h3 { font-size: 1.35rem; font-weight: 800; color: var(--urgent); }
+.never ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.never li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 12px; }
+.never li::before {
+  content: ""; width: 20px; height: 20px; margin-top: 2px; background: var(--urgent);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 5l10 10M15 5L5 15' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 5l10 10M15 5L5 15' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+}
+.never strong { display: block; }
+.never span { font-size: 0.88rem; color: var(--muted); }
+.facts { display: grid; gap: 0; }
+.fact { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr); gap: 14px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.fact:first-child { border-top: 1px solid var(--line); }
+.fact b { font-family: var(--font-display); font-weight: 800; font-size: 2rem; letter-spacing: -0.03em; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
+.fact b small { font-size: 0.85rem; font-weight: 700; letter-spacing: 0; }
+.fact p { font-size: 0.92rem; }
+.fact p span { color: var(--muted); }
+.creatine { border-radius: 18px; padding: 16px 18px; font-size: 0.9rem; background: rgba(245, 200, 67, 0.1); border: 1px solid rgba(245, 200, 67, 0.25); color: var(--muted); }
+.creatine strong { color: var(--watch); }
+@media (min-width: 900px) { .safety-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; } }
+
+footer { margin-top: 96px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 14px; font-size: 0.82rem; color: var(--faint); }
+footer ul { padding-left: 18px; display: grid; gap: 6px; }
+footer a { color: var(--muted); }
+
+/* ---------- Dock + toast ---------- */
+.dock {
+  position: fixed; z-index: 40; left: 50%; transform: translateX(-50%);
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  width: min(470px, calc(100% - 24px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)));
+  display: flex; padding: 5px; border-radius: 999px; background: rgba(22, 17, 28, 0.72);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5); backdrop-filter: blur(18px) saturate(1.5);
+  border: 1px solid var(--line-2); box-shadow: 0 14px 40px var(--shadow);
+}
+.dock a {
+  flex: 1; position: relative; z-index: 1; text-align: center; padding: 10px 0; border-radius: 999px; min-width: 0;
+  font-size: 0.76rem; font-weight: 600; color: var(--muted); text-decoration: none; transition: color 0.3s;
+}
+.dock a[aria-current="location"] { color: var(--bg); }
+.pill {
+  position: absolute; top: 5px; bottom: 5px; left: 0; width: 0; border-radius: 999px; background: var(--ink); opacity: 0;
+  transition: transform 0.45s cubic-bezier(.3,.7,.2,1), width 0.45s cubic-bezier(.3,.7,.2,1), opacity 0.25s;
+}
+.toast {
+  position: fixed; z-index: 45; left: 50%; bottom: calc(78px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 12px);
+  padding: 10px 16px; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 600; font-size: 0.86rem;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="page">
+  <div class="topbar">
+    <span class="brand"><span class="brand-mark" aria-hidden="true"></span>Weight Gain Plan</span>
+    <span>India · Nov 2026</span>
+  </div>
+
+  <section class="story" id="day" aria-label="Your day">
+    <div class="intro">
+      <p class="eyebrow">For a 34-year-old woman in India</p>
+      <h1 class="h1"><span class="line"><span>Gain muscle,</span></span><span class="line"><span><em>not belly fat.</em></span></span></h1>
+      <p class="lede">Real Indian meals, strength training and one homemade shake, plus a health check that reads your reports against Indian cut-offs.</p>
+      <div class="ctas">
+        <a class="btn primary magnetic" href="#check">Check my reports</a>
+        <a class="btn ghost magnetic" href="#you">Find my numbers</a>
+      </div>
+      <p class="scroll-cue"><span></span>Scroll to walk through a day on the plate</p>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="aura" aria-hidden="true"></div>
+      <canvas id="thali" role="img" aria-label="A 3D steel thali. Each katori is one meal of the sample day, sized by its calories."></canvas>
+      <svg class="thali-2d" viewBox="0 0 360 360" aria-hidden="true">
+        <defs>
+          <radialGradient id="steel2d" cx="45%" cy="38%" r="70%"><stop offset="0" stop-color="#5A5366"/><stop offset="1" stop-color="#231D2B"/></radialGradient>
+        </defs>
+        <circle cx="180" cy="180" r="172" fill="url(#steel2d)" stroke="#6B6378" stroke-width="2"/>
+        <circle cx="180" cy="180" r="160" fill="none" stroke="#6B6378" stroke-width="1" opacity="0.6"/>
+        <g class="k2d" data-id="b"><circle cx="180" cy="78" r="43" fill="#8D8799"/><circle cx="180" cy="78" r="39.5" fill="#F2D46A"/><text x="180" y="82">Poha</text></g>
+        <g class="k2d" data-id="f"><circle cx="277" cy="148.5" r="19" fill="#8D8799"/><circle cx="277" cy="148.5" r="15.5" fill="#A9D18E"/><text x="277" y="152" style="font-size:9px">Fruit</text></g>
+        <g class="k2d" data-id="l"><circle cx="240" cy="262.5" r="47" fill="#8D8799"/><circle cx="240" cy="262.5" r="43.4" fill="#EDB54E"/><text x="240" y="266">Dal-rice</text></g>
+        <g class="k2d" data-id="s"><circle cx="120" cy="262.5" r="54.7" fill="#8D8799"/><circle cx="120" cy="262.5" r="51.2" fill="#D4C1EC"/><text x="120" y="266">Shake</text></g>
+        <g class="k2d" data-id="d"><circle cx="83" cy="148.5" r="45.7" fill="#8D8799"/><circle cx="83" cy="148.5" r="42.2" fill="#E99A6C"/><text x="83" y="152">Paneer</text></g>
+      </svg>
+      <div class="stage-top"><span class="tag">Sample day · 50 kg</span><span class="hint" id="hint">Drag to spin · tap a katori</span></div>
+      <div class="caption" aria-live="polite">
+        <span class="cap-dot" id="cap-dot"></span>
+        <span class="cap-text"><span class="cap-time" id="cap-time">Your whole day</span><span class="cap-nums"><b id="cap-kcal">2,020</b> kcal · <span id="cap-pro">76 g</span> protein</span></span>
+      </div>
+    </div>
+
+    <div class="steps">
+      <article class="step" data-meal="b">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--f-poha)"></span>Breakfast · 8:00</p>
+          <h3>Poha with peanuts and peas</h3>
+          <p class="step-desc">One plate, with a katori of curd on the side.</p>
+          <dl class="step-nums"><div><dt>kcal</dt><dd>390</dd></div><div><dt>protein</dt><dd>11 g</dd></div><div><dt>of the day</dt><dd>19%</dd></div></dl>
+          <div class="share"><i style="width: 19%"></i></div>
+        </div>
+      </article>
+      <article class="step" data-meal="f">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--f-fruit)"></span>Mid-morning · 11:00</p>
+          <h3>One fruit</h3>
+          <p class="step-desc">Guava, apple or papaya.</p>
+          <dl class="step-nums"><div><dt>kcal</dt><dd>60</dd></div><div><dt>protein</dt><dd>1 g</dd></div><div><dt>of the day</dt><dd>3%</dd></div></dl>
+          <div class="share"><i style="width: 3%"></i></div>
+        </div>
+      </article>
+      <article class="step" data-meal="l">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--f-dal)"></span>Lunch · 13:30</p>
+          <h3>Dal, rice and sabzi</h3>
+          <p class="step-desc">One katori of each, with salad.</p>
+          <dl class="step-nums"><div><dt>kcal</dt><dd>470</dd></div><div><dt>protein</dt><dd>14 g</dd></div><div><dt>of the day</dt><dd>23%</dd></div></dl>
+          <div class="share"><i style="width: 23%"></i></div>
+        </div>
+      </article>
+      <article class="step" data-meal="s">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--f-shake)"></span>After workout · 18:00</p>
+          <h3>The daily shake</h3>
+          <p class="step-desc">Milk, banana, oats, peanut butter, half a scoop of whey and dates. Build your own glass further down.</p>
+          <dl class="step-nums"><div><dt>kcal</dt><dd>655</dd></div><div><dt>protein</dt><dd>32 g</dd></div><div><dt>of the day</dt><dd>32%</dd></div></dl>
+          <div class="share"><i style="width: 32%"></i></div>
+        </div>
+      </article>
+      <article class="step" data-meal="d">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--f-paneer)"></span>Dinner · 20:30</p>
+          <h3>Paneer-matar with 2 rotis</h3>
+          <p class="step-desc">50 g paneer. Eat non-veg? Swap it for 2 boiled eggs or 75 g chicken.</p>
+          <dl class="step-nums"><div><dt>kcal</dt><dd>445</dd></div><div><dt>protein</dt><dd>18 g</dd></div><div><dt>of the day</dt><dd>22%</dd></div></dl>
+          <div class="share"><i style="width: 22%"></i></div>
+        </div>
+      </article>
+      <article class="step total" data-meal="all">
+        <div class="step-card">
+          <p class="step-time"><span class="dot" style="background: var(--accent)"></span>Day total</p>
+          <h3>About 2,020 kcal and 76 g protein</h3>
+          <p class="step-desc">Built for a 50 kg woman. 1 katori is about 150 ml. Set your own numbers next and every target changes with you.</p>
+          <ul class="hero-stats" style="margin-top: 16px">
+            <li><b>+300–400</b><span>kcal a day above what you burn</span></li>
+            <li><b>3×</b><span>strength training a week</span></li>
+            <li><b>1 shake</b><span>a day, max one scoop</span></li>
+          </ul>
+          <a class="btn ghost small" href="#you">Set my numbers</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="you" aria-labelledby="you-h">
+    <header class="sec-head">
+      <p class="eyebrow">Your numbers</p>
+      <h2 id="you-h">Everything adapts to <em>you</em></h2>
+      <p>Set your weight, height, age and activity once. Your targets, health check and age advice all update from these, and stay saved on this device.</p>
+    </header>
+    <div class="you-grid">
+      <div class="panel controls">
+        <div class="slider">
+          <div class="slider-top"><label for="w">Weight</label><output id="w-out" for="w">50 kg</output></div>
+          <input type="range" id="w" min="35" max="100" step="0.5" value="50">
+        </div>
+        <div class="slider">
+          <div class="slider-top"><label for="h">Height</label><output id="h-out" for="h">160 cm · 5′3″</output></div>
+          <input type="range" id="h" min="140" max="190" step="1" value="160">
+        </div>
+        <div class="slider">
+          <div class="slider-top"><label for="a">Age</label><output id="a-out" for="a">34 yrs</output></div>
+          <input type="range" id="a" min="18" max="80" step="1" value="34">
+        </div>
+        <div class="slider">
+          <span class="group-label" id="act-label">How active are you?</span>
+          <div class="seg" role="radiogroup" aria-labelledby="act-label">
+            <input type="radio" name="act" id="act-1" value="1.2"><label for="act-1">Mostly sitting</label>
+            <input type="radio" name="act" id="act-2" value="1.375" checked><label for="act-2">Lifting 3×/wk</label>
+            <input type="radio" name="act" id="act-3" value="1.55"><label for="act-3">Very active</label>
+          </div>
+          <p class="seg-desc" id="act-desc">Desk job plus strength training 3 times a week.</p>
+        </div>
+        <button type="button" class="reset" id="reset-profile">Reset to example (50 kg, 160 cm, 34)</button>
+      </div>
+      <div class="results" aria-live="polite">
+        <div class="eat">
+          <span class="lbl">Eat per day</span>
+          <span class="val" id="r-kcal">1,910–2,010</span>
+          <span class="unit">kcal</span>
+          <p class="eat-note" id="r-note">Aim for the middle of this range and train hard.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="lbl">Protein (1.2–1.6 g/kg)</span><span class="val"><span id="r-pro">60–80</span> <small>g</small></span></div>
+          <div class="stat"><span class="lbl">Your body burns</span><span class="val"><span id="r-maint">1,610</span> <small>kcal</small></span></div>
+          <div class="stat"><span class="lbl">Healthy pace</span><span class="val">1–2 <small>kg/month</small></span></div>
+          <div class="stat"><span class="lbl">Water</span><span class="val">2.5–3 <small>litres</small></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="age-head">
+      <h3 class="sub-h">Your age, your priorities</h3>
+      <p id="age-now">You're 34, so the 30–44 card applies to you.</p>
+    </div>
+    <div class="bands" id="bands">
+      <article class="band" data-min="18" data-max="29">
+        <div class="band-top"><span class="band-age">18–29</span><span class="you-tag">You</span></div>
+        <h4>Build your bone bank</h4>
+        <dl>
+          <div><dt>Focus</dt><dd>Bone mass peaks around 30. Lift weights now.</dd></div>
+          <div><dt>Protein</dt><dd>1.2–1.6 g per kg with training</dd></div>
+          <div><dt>Calcium</dt><dd>1,000 mg a day</dd></div>
+          <div><dt>Check</dt><dd>Haemoglobin, vitamin D, B12</dd></div>
+        </dl>
+      </article>
+      <article class="band" data-min="30" data-max="44">
+        <div class="band-top"><span class="band-age">30–44</span><span class="you-tag">You</span></div>
+        <h4>Protect your muscle</h4>
+        <dl>
+          <div><dt>Focus</dt><dd>From 30, muscle falls about 3–5% a decade, more without strength training.</dd></div>
+          <div><dt>Protein</dt><dd>1.2–1.6 g per kg with training</dd></div>
+          <div><dt>Calcium</dt><dd>1,000 mg a day</dd></div>
+          <div><dt>Check</dt><dd>Yearly: blood count, ferritin, vitamin D, B12, thyroid, sugar</dd></div>
+        </dl>
+      </article>
+      <article class="band" data-min="45" data-max="59">
+        <div class="band-top"><span class="band-age">45–59</span><span class="you-tag">You</span></div>
+        <h4>Plan for menopause</h4>
+        <dl>
+          <div><dt>Focus</dt><dd>Bone loss speeds up and fat moves to the waist. Keep your waist under 80 cm.</dd></div>
+          <div><dt>Protein</dt><dd>1.2–1.6 g per kg, spread over 3 meals</dd></div>
+          <div><dt>Calcium</dt><dd>1,200 mg a day after menopause</dd></div>
+          <div><dt>Check</dt><dd>Yearly: blood pressure, sugar, cholesterol, kidney test</dd></div>
+        </dl>
+      </article>
+      <article class="band" data-min="60" data-max="80">
+        <div class="band-top"><span class="band-age">60+</span><span class="you-tag">You</span></div>
+        <h4>Protein at every meal</h4>
+        <dl>
+          <div><dt>Focus</dt><dd>Muscle and appetite fall faster. Balance training helps prevent falls.</dd></div>
+          <div><dt>Protein</dt><dd>At least 1.0–1.2 g per kg from 65, about 25–30 g per meal</dd></div>
+          <div><dt>Calcium</dt><dd>1,200 mg a day</dd></div>
+          <div><dt>Check</dt><dd>Kidney test before any protein powder. eGFR drifts down with age.</dd></div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="check" aria-labelledby="check-h">
+    <header class="sec-head">
+      <p class="eyebrow">Health check · Indian warning levels</p>
+      <h2 id="check-h">All your reports, <em>one verdict</em></h2>
+      <p>Type in numbers from your blood test and check-up. Each one gets a level from Indian guidelines where they exist, otherwise standard lab cut-offs. Kidney results use your age. Nothing leaves this device.</p>
+    </header>
+    <div class="levels" aria-label="What the levels mean">
+      <div><span class="ldot ok"></span><p><b>Normal</b><span>In the healthy range</span></p></div>
+      <div><span class="ldot watch"></span><p><b>Watch</b><span>Borderline. Adjust and recheck.</span></p></div>
+      <div><span class="ldot act"></span><p><b>Act</b><span>Out of range. See your doctor.</span></p></div>
+      <div><span class="ldot urgent"></span><p><b>Urgent</b><span>See a doctor soon</span></p></div>
+    </div>
+    <div class="panel summary" id="summary" data-tone="none">
+      <div class="summary-main">
+        <svg class="donut" viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="track" cx="60" cy="60" r="48"/>
+          <circle class="seg-arc" id="arc-ok" cx="60" cy="60" r="48" stroke="#4ED39A" transform="rotate(-90 60 60)" stroke-dasharray="0 302"/>
+          <circle class="seg-arc" id="arc-watch" cx="60" cy="60" r="48" stroke="#F5C843" transform="rotate(-90 60 60)" stroke-dasharray="0 302"/>
+          <circle class="seg-arc" id="arc-act" cx="60" cy="60" r="48" stroke="#FF8D42" transform="rotate(-90 60 60)" stroke-dasharray="0 302"/>
+          <circle class="seg-arc" id="arc-urgent" cx="60" cy="60" r="48" stroke="#FF5A6E" transform="rotate(-90 60 60)" stroke-dasharray="0 302"/>
+          <text class="d-big" x="60" y="62" id="d-big">0</text>
+          <text class="d-small" x="60" y="78" id="d-small">of 0 normal</text>
+        </svg>
+        <div>
+          <p class="verdict-title" id="v-title">Add your numbers</p>
+          <p class="verdict-text" id="v-text">Type values from your latest reports into the cards below.</p>
+        </div>
+      </div>
+      <div class="kidney" id="kidney" data-tone="none">
+        <span class="kidney-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5C6 3.6 3.5 6.4 3.5 10.3c0 4.3 2.4 9.2 5.6 9.2 1.9 0 2.4-1.9 2.4-3.6 0-1.6-1.4-2.3-1.4-3.9 0-1.4 1.4-1.9 1.4-3.6C11.5 6.6 10.6 5 9 4.5z"/><path d="M15 4.5c3-.9 5.5 1.9 5.5 5.8 0 4.3-2.4 9.2-5.6 9.2"/></svg></span>
+        <p><b>Kidney check</b><span id="kidney-text">Add creatinine and urine ACR to check your kidneys before using protein powder.</span></p>
+      </div>
+      <div class="sum-actions">
+        <span class="ex-state" id="ex-state">Showing example values for a thin 34-year-old.</span>
+        <button type="button" class="btn ghost small" id="copy-sum">Copy for my doctor</button>
+        <button type="button" class="btn ghost small" id="clear-labs">Clear all</button>
+        <button type="button" class="btn ghost small" id="use-example" hidden>Use example</button>
+      </div>
+      <textarea class="copy-box" id="copy-box" readonly hidden aria-label="Summary to copy"></textarea>
+    </div>
+    <div class="mk-groups" id="mk-groups"></div>
+  </section>
+
+  <section class="sec" id="plan" aria-labelledby="plan-h">
+    <header class="sec-head">
+      <p class="eyebrow">The daily shake</p>
+      <h2 id="plan-h">Build your <em>glass</em></h2>
+      <p>Each layer is sized by its calories. Tap an ingredient to take it out, or switch the protein source, and watch the glass and totals change.</p>
+    </header>
+    <div class="panel shake">
+      <div class="glass-row">
+        <div class="glass-wrap" id="glass-wrap" aria-hidden="true">
+          <div class="glass">
+            <div class="liquid" id="liquid">
+              <div class="layer" data-ing="milk" style="background: var(--i-milk)"><span>Milk</span></div>
+              <div class="layer" data-ing="oats" style="background: var(--i-oats)"><span>Oats</span></div>
+              <div class="layer" data-ing="banana" style="background: var(--i-banana)"><span>Banana</span></div>
+              <div class="layer" data-ing="pb" style="background: var(--i-pb)"><span>Peanut butter</span></div>
+              <div class="layer" data-ing="whey" style="background: var(--i-whey)"><span>Whey</span></div>
+              <div class="layer" data-ing="sattu" style="background: var(--i-sattu)"><span>Sattu</span></div>
+              <div class="layer" data-ing="curd" style="background: var(--i-curd)"><span>Hung curd</span></div>
+              <div class="layer" data-ing="dates" style="background: var(--i-dates)"><span>Dates</span></div>
+            </div>
+            <div class="wave" id="wave"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M0 7 Q12.5 0 25 7 T50 7 T75 7 T100 7 T125 7 T150 7 T175 7 T200 7 V14 H0 Z" fill="currentColor"/></svg></div>
+            <div class="gloss"></div>
+          </div>
+          <svg class="glass-outline" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,0 100,0 86,100 14,100"/></svg>
+        </div>
+        <div class="totals" aria-live="polite">
+          <div class="kcal"><span id="s-kcal">655</span><small>kcal per glass</small></div>
+          <div class="pro"><span id="s-pro">32</span> g <small>protein</small></div>
+          <p class="shake-note" id="s-note">First week: drink half the glass so your stomach can adjust.</p>
+        </div>
+      </div>
+      <div class="shake-controls">
+        <div class="slider">
+          <span class="group-label" id="whey-label">Protein source</span>
+          <div class="seg" role="radiogroup" aria-labelledby="whey-label">
+            <input type="radio" name="whey" id="wh-1" value="half" checked><label for="wh-1">½ scoop whey</label>
+            <input type="radio" name="whey" id="wh-2" value="full"><label for="wh-2">Full scoop</label>
+            <input type="radio" name="whey" id="wh-3" value="none"><label for="wh-3">No whey</label>
+          </div>
+        </div>
+        <div class="toggles" role="group" aria-label="Ingredients">
+          <button type="button" class="tog" data-toggle="milk" aria-pressed="true"><i style="background: var(--i-milk)"></i>Milk</button>
+          <button type="button" class="tog" data-toggle="oats" aria-pressed="true"><i style="background: var(--i-oats)"></i>Oats</button>
+          <button type="button" class="tog" data-toggle="banana" aria-pressed="true"><i style="background: var(--i-banana)"></i>Banana</button>
+          <button type="button" class="tog" data-toggle="pb" aria-pressed="true"><i style="background: var(--i-pb)"></i>Peanut butter</button>
+          <button type="button" class="tog" data-toggle="dates" aria-pressed="true"><i style="background: var(--i-dates)"></i>Dates</button>
+        </div>
+        <ul class="recipe-list">
+          <li><b>Milk</b><span>300 ml toned milk · 175 kcal · 9.5 g protein</span></li>
+          <li><b>Oats</b><span>40 g rolled oats (4 tbsp) · 150 kcal · 5 g</span></li>
+          <li><b>Banana</b><span>1 medium · 105 kcal · 1.3 g</span></li>
+          <li><b>Peanut butter</b><span>1 tbsp, no added sugar · 95 kcal · 4 g</span></li>
+          <li id="r-whey"><b>Whey</b><span>½ scoop (~15 g) · 60 kcal · 12 g</span></li>
+          <li><b>Dates</b><span>3 dates · 70 kcal · 0.5 g</span></li>
+        </ul>
+        <p class="small muted">Blend everything. Drink it after your workout or as an evening snack, never in place of a meal. If milk bloats you, choose a whey isolate.</p>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top: 40px">
+      <p class="eyebrow">Your first 12 weeks</p>
+      <h2>Test, start, check, <em>retest</em></h2>
+    </div>
+    <ol class="tl">
+      <li>
+        <span class="when">Week 0</span>
+        <h3>Get your blood tests</h3>
+        <p>They rule out a medical reason for staying thin and give a kidney baseline. Enter the results in the health check above. Pregnant, planning a pregnancy or breastfeeding? Ask your doctor before any supplement.</p>
+        <div class="test-chips"><span><b>CBC</b> anaemia</span><span><b>TSH</b> thyroid</span><span><b>HbA1c</b> sugar</span><span><b>KFT</b> kidneys</span><span><b>Urine ACR</b> kidneys</span><span><b>LFT</b> liver</span><span><b>Vit D · B12 · ferritin</b></span></div>
+      </li>
+      <li>
+        <span class="when">Week 1</span>
+        <h3>Start gently</h3>
+        <p>Drink half the shake each day. Begin strength training 3 times a week: squats, rows, push-ups and light dumbbells.</p>
+      </li>
+      <li>
+        <span class="when">Week 2</span>
+        <h3>Full routine, weekly check-in</h3>
+        <p>Full shake every day. Once a week, weigh yourself on the same morning before eating, and measure your waist at the navel.</p>
+      </li>
+      <li>
+        <span class="when">Week 3 onward</span>
+        <h3>Adjust</h3>
+        <p>Weight not moving? Add 150–200 kcal a day, such as a roti with 1 tsp ghee or a katori of curd with a banana. Waist growing fast while arms and legs don't change? Cut sweets and use fewer dates.</p>
+      </li>
+      <li>
+        <span class="when">Week 12</span>
+        <h3>Retest</h3>
+        <p>Repeat the kidney test, urine ACR and liver test, and compare with week 0. At 1–2 kg a month, you should be about 3–6 kg up.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="sec" id="buy" aria-labelledby="buy-h">
+    <header class="sec-head">
+      <p class="eyebrow">Buying guide</p>
+      <h2 id="buy-h">If you buy a <em>ready-made</em> product</h2>
+      <p>Swipe through. Figures come from retailer listings and can differ by flavour, so check the tub's label.</p>
+    </header>
+    <div class="legend"><span>Each bar is 100 g of powder:</span><span><i style="background: var(--accent)"></i>Protein</span><span><i style="background: var(--haldi)"></i>Carbs</span></div>
+    <div class="cards" id="cards">
+      <article class="card">
+        <span class="chip good">Best ready-made pick</span>
+        <h3>Avvatar Muscle Gainer</h3>
+        <div class="macro"><div class="bar"><span class="p" data-w="42" style="width: 42%"></span><span class="c" data-w="42" style="width: 42%"></span></div><div class="macro-legend"><span>~42 g protein</span><span>~42 g carbs</span></div></div>
+        <p>About 220 kcal per 60 g scoop. Mostly protein, with a light sugar load.</p>
+        <p class="proof">A batch passed Trustified Gold testing, June 2024</p>
+      </article>
+      <article class="card">
+        <span class="chip good">If appetite is low</span>
+        <h3>Avvatar Mass Gainer</h3>
+        <div class="macro"><div class="bar"><span class="p" data-w="21.5" style="width: 21.5%"></span><span class="c" data-w="63.5" style="width: 63.5%"></span></div><div class="macro-legend"><span>21.5 g protein</span><span>63.5 g carbs</span></div></div>
+        <p>Take 1 scoop, not 2. Seen at about ₹2,300 for 2 kg and ₹3,400 for 4 kg in November 2026.</p>
+        <p class="proof">A batch passed Trustified Gold testing, June 2024</p>
+      </article>
+      <article class="card">
+        <span class="chip good">For the homemade shake</span>
+        <h3>Plain whey protein</h3>
+        <p>Pick a brand on Trustified's Gold list:</p>
+        <div class="brand-list"><span>Avvatar</span><span>MuscleBlaze Biozyme Performance</span><span>The Whole Truth</span><span>Truebasics</span><span>Naturaltein</span></div>
+        <p>Milk bloats you? Choose a whey isolate, which has very little lactose.</p>
+      </article>
+      <article class="card">
+        <span class="chip neutral">No lab report found</span>
+        <h3>MuscleBlaze Mass Gainer XXL</h3>
+        <div class="macro"><div class="bar"><span class="p" data-w="21" style="width: 21%"></span><span class="c" data-w="70" style="width: 70%"></span></div><div class="macro-legend"><span>~21 g protein</span><span>~70 g carbs</span></div></div>
+        <p>Popular, with about 3 g of carbs for every 1 g of protein. No independent lab report was found for it.</p>
+      </article>
+      <article class="card bad">
+        <span class="chip bad">Not for you</span>
+        <h3>ON Serious Mass</h3>
+        <div class="macro"><div class="bar"><span class="p" data-w="15" style="width: 15%"></span><span class="c" data-w="75" style="width: 75%"></span></div><div class="macro-legend"><span>~15 g protein</span><span>~75 g carbs</span></div></div>
+        <p>One full serving (334 g) is about 1,250 kcal and 250 g carbs, with added creatine. That is more than half a day's food in one glass.</p>
+      </article>
+    </div>
+    <div class="dots" id="dots" role="group" aria-label="Product cards">
+      <button type="button" aria-label="Card 1" aria-current="true"></button><button type="button" aria-label="Card 2"></button><button type="button" aria-label="Card 3"></button><button type="button" aria-label="Card 4"></button><button type="button" aria-label="Card 5"></button>
+    </div>
+    <h3 class="sub-h">Before you pay</h3>
+    <ul class="checks">
+      <li><span>Buy from the brand's own website or a large authorised seller, not Instagram or small marketplace sellers.</span></li>
+      <li><span>The label shows an FSSAI licence number, batch number and expiry. Scan the authenticity code if there is one.</span></li>
+      <li><span>Look up the batch on <a href="https://www.trustified.in/goldcertified" target="_blank" rel="noopener">trustified.in</a>. Results apply only to the batch tested.</span></li>
+      <li><span>Whey is the first ingredient. Glycine, taurine or glutamine near the top can mean the protein count is inflated.</span></li>
+      <li><span>Under about 10 g added sugar per serving, with no "proprietary blend" and no herbal extracts.</span></li>
+    </ul>
+  </section>
+
+  <section class="sec" id="safety" aria-labelledby="safety-h">
+    <header class="sec-head">
+      <p class="eyebrow">Warning signs</p>
+      <h2 id="safety-h">Know when to <em>stop</em></h2>
+      <p>Four levels, from normal changes to an emergency. Match what you feel to a level and do what it says.</p>
+    </header>
+    <ol class="ladder">
+      <li class="rung" data-level="ok">
+        <div class="rung-top"><span class="ldot"></span><span class="rung-n">Level 1</span></div>
+        <h3>Normal: keep going</h3>
+        <ul><li>Hungrier than usual</li><li>Mild bloating in week 1</li><li>Sore muscles for a day or two after training</li><li>Gaining 0.25–0.5 kg a week</li></ul>
+      </li>
+      <li class="rung" data-level="watch">
+        <div class="rung-top"><span class="ldot"></span><span class="rung-n">Level 2</span></div>
+        <h3>Watch: adjust the plan</h3>
+        <ul><li>Bloating or gas past 2 weeks: halve the shake or switch to whey isolate</li><li>Acne flare or loose stools</li><li>Waist growing faster than arms and legs</li><li>Gaining over 1 kg a week for 2 weeks: cut sweets and dates</li></ul>
+      </li>
+      <li class="rung" data-level="act">
+        <div class="rung-top"><span class="ldot"></span><span class="rung-n">Level 3</span></div>
+        <h3>Act: see a doctor within days</h3>
+        <ul><li>Swollen feet, face or eyes</li><li>Foamy or very dark urine</li><li>Blood pressure 140/90 or higher, twice</li><li>Round, puffy face or new stretch marks after fast gain (hidden steroid sign)</li><li>Racing heart, shaky hands or weight still falling (thyroid)</li></ul>
+      </li>
+      <li class="rung" data-level="urgent">
+        <div class="rung-top"><span class="ldot"></span><span class="rung-n">Level 4</span></div>
+        <h3>Urgent: get help now</h3>
+        <ul><li>Chest pain or severe breathlessness</li><li>Fainting</li><li>Swollen lips, tongue or throat, or hives after a product</li><li>Very little or no urine</li><li>Blood pressure 180/110 or higher with headache or blurred vision</li></ul>
+        <div class="sos"><div><b>112</b><span>All emergencies</span></div><div><b>108</b><span>Ambulance</span></div></div>
+      </li>
+    </ol>
+    <div class="safety-grid">
+      <div class="never">
+        <h3>Never take these</h3>
+        <ul>
+          <li><p><strong>Ayurvedic or herbal weight-gain powders, capsules and syrups</strong><span>Especially ones promising "5 kg in 15 days". Weight-gain products like these have been found with hidden steroids (dexamethasone) and appetite drugs (cyproheptadine).</span></p></li>
+          <li><p><strong>Appetite-booster syrups or tablets</strong><span>Only if a doctor prescribes them.</span></p></li>
+          <li><p><strong>Unbranded or very cheap gainers</strong><span>Unknown sellers and unbranded tubs have no batch testing you can check.</span></p></li>
+        </ul>
+      </div>
+      <div>
+        <div class="facts">
+          <div class="fact"><b>28</b><p>trials <span>in a 2018 review found no drop in kidney function at 1.5 g protein per kg or more, in people without kidney disease.</span></p></div>
+          <div class="fact"><b>1.6<small> g/kg</small></b><p>is where muscle gain stops improving, <span>says ICMR-NIN (2024), which also urges caution with protein powders. This plan stays at 1.2–1.6.</span></p></div>
+          <div class="fact"><b>25<small>/36</small></b><p>Indian protein supplements <span>in a 2024 study did not match their labels, and 5 contained aflatoxins. Buy tested batches only.</span></p></div>
+        </div>
+        <p class="creatine" style="margin-top: 16px"><strong>Creatine can make a kidney test look worse than it is.</strong> Many gainers contain it. It raises the creatinine number without harming the kidney, so tell your doctor if you take it.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>General guidance based on published research, not a replacement for your doctor or a registered dietitian. Lab ranges vary between labs; your report's own range comes first. Product formulas and prices change; check the label before buying.</p>
+    <ul>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3738996" target="_blank" rel="noopener">Indian consensus on obesity: BMI and waist cut-offs (2009)</a></li>
+      <li><a href="https://www.cmcendovellore.org/pub/2025/revised-definition-of-obesity-in-asian-indians-living-in-india.pdf" target="_blank" rel="noopener">Revised definition of obesity in Asian Indians (2025)</a></li>
+      <li><a href="https://en.vikaspedia.in/health/health-campaigns/anemia-mukt-bharat" target="_blank" rel="noopener">Anemia Mukt Bharat: haemoglobin cut-offs</a></li>
+      <li><a href="https://www.pubmed.gov/32427886/" target="_blank" rel="noopener">Indian Guidelines on Hypertension-IV (2019)</a></li>
+      <li><a href="https://www.nin.res.in/rdabook/brief_note.pdf" target="_blank" rel="noopener">ICMR-NIN Nutrient Requirements for Indians (2020)</a></li>
+      <li><a href="https://www.health.harvard.edu/healthy-aging-and-longevity/a-guide-to-combatting-sarcopenia-and-preserving-muscle-mass-as-you-get-older" target="_blank" rel="noopener">Harvard Health: age-related muscle loss</a></li>
+      <li><a href="https://www.trustified.in/goldcertified" target="_blank" rel="noopener">Trustified Gold Certified list</a></li>
+      <li><a href="https://www.nutraingredients.com/Article/2024/04/29/Protein-products-tested-in-India-don-t-meet-label-claims" target="_blank" rel="noopener">Citizens Protein Project (2024)</a></li>
+      <li><a href="https://www.pubmed.gov/30383278/" target="_blank" rel="noopener">Protein intake and kidney function meta-analysis (2018)</a></li>
+      <li><a href="https://theprint.in/india/icmr-calls-for-avoiding-protein-supplements-issues-dietary-guidelines-for-indians/2077477" target="_blank" rel="noopener">ICMR-NIN Dietary Guidelines for Indians (2024)</a></li>
+      <li><a href="https://ahj.kmu.ac.ir/article_92594_2fc0c63c6e8f205478ffa88446fa92c2.pdf" target="_blank" rel="noopener">Hidden dexamethasone and cyproheptadine in weight-gain products</a></li>
+      <li>Also used: KDIGO kidney categories, CKD-EPI 2021 eGFR equation, ICMR diabetes guidelines, WHO ferritin guideline (2020), PROT-AGE protein advice for older adults.</li>
+    </ul>
+  </footer>
+</div>
+
+<nav class="dock" id="dock" aria-label="Sections">
+  <span class="pill" id="pill" aria-hidden="true"></span>
+  <a href="#day">Day</a>
+  <a href="#you">You</a>
+  <a href="#check">Check</a>
+  <a href="#plan">Shake</a>
+  <a href="#buy">Buy</a>
+  <a href="#safety">Safety</a>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const fmt = (n) => Math.round(n).toLocaleString("en-IN");
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+  function tween(el, to, render, dur) {
+    if (!el._cur || reduce) { el._cur = to.slice(); el.textContent = render(to); return; }
+    cancelAnimationFrame(el._raf);
+    const from = el._cur.slice(), t0 = performance.now(), d = dur || 500;
+    const step = (now) => {
+      const k = Math.min(1, (now - t0) / d), e = 1 - Math.pow(1 - k, 3);
+      el._cur = from.map((f, i) => f + (to[i] - f) * e);
+      el.textContent = render(el._cur);
+      if (k < 1) el._raf = requestAnimationFrame(step);
+    };
+    el._raf = requestAnimationFrame(step);
+  }
+  function toast(msg) {
+    const t = $("#toast");
+    t.textContent = msg; t.classList.add("show");
+    clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("show"), 2200);
+  }
+
+  /* ================= State ================= */
+  const KEY = "weight-gain-plan-v3";
+  const EX_PROFILE = { w: 50, h: 160, a: 34, act: 1.375 };
+  const EX_LABS = { waist: 68, sys: 112, dia: 72, fbs: 88, a1c: 5.3, hb: 11.4, ferritin: 22, vitd: 18, b12: 260, tsh: 2.1, creat: 0.7, acr: 10 };
+  const state = { profile: Object.assign({}, EX_PROFILE), labs: Object.assign({}, EX_LABS), example: true };
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (s && s.profile) Object.assign(state.profile, s.profile);
+    if (s && s.labs) { state.labs = s.labs; state.example = !!s.example; }
+  } catch (e) { /* storage unavailable */ }
+  state.profile.w = clamp(+state.profile.w || 50, 35, 100);
+  state.profile.h = clamp(+state.profile.h || 160, 140, 190);
+  state.profile.a = clamp(+state.profile.a || 34, 18, 80);
+  if ([1.2, 1.375, 1.55].indexOf(+state.profile.act) < 0) state.profile.act = 1.375;
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* ignore */ } }
+
+  /* ================= Meals + 3D thali ================= */
+  const MEALS = {
+    b: { time: "Breakfast", kcal: 390, p: 11, a: -90, R: 0.478, color: "var(--f-poha)" },
+    f: { time: "Mid-morning fruit", kcal: 60, p: 1, a: -18, R: 0.188, color: "var(--f-fruit)" },
+    l: { time: "Lunch", kcal: 470, p: 14, a: 54, R: 0.525, color: "var(--f-dal)" },
+    s: { time: "After-workout shake", kcal: 655, p: 32, a: 126, R: 0.62, color: "var(--f-shake)" },
+    d: { time: "Dinner", kcal: 445, p: 18, a: 198, R: 0.511, color: "var(--f-paneer)" }
+  };
+  let currentMeal = null, thali = null;
+  const capTime = $("#cap-time"), capKcal = $("#cap-kcal"), capPro = $("#cap-pro"), capDot = $("#cap-dot");
+
+  function setMeal(id) {
+    id = id || null;
+    if (id === currentMeal) return;
+    currentMeal = id;
+    const m = id ? MEALS[id] : null;
+    capTime.textContent = m ? m.time : "Your whole day";
+    tween(capKcal, [m ? m.kcal : 2020], (v) => fmt(v[0]), 450);
+    capPro.textContent = (m ? m.p : 76) + " g";
+    capDot.style.background = m ? m.color : "var(--accent)";
+    $$(".step").forEach((s) => s.classList.toggle("is-active", s.dataset.meal === (id || "all")));
+    if (thali) thali.select(id);
+    const svg = $(".thali-2d");
+    svg.classList.toggle("has-sel", !!id);
+    $$(".k2d").forEach((k) => k.classList.toggle("on", k.dataset.id === id));
+  }
+  function scrollToStep(id) {
+    const step = $('.step[data-meal="' + id + '"]');
+    if (!step) return;
+    const desktop = window.matchMedia("(min-width: 960px)").matches;
+    const r = step.getBoundingClientRect();
+    const top = window.scrollY + r.top + r.height / 2 - window.innerHeight * (desktop ? 0.5 : 0.73);
+    window.scrollTo({ top: top, behavior: reduce ? "auto" : "smooth" });
+    setMeal(id);
+  }
+
+  function rng(seed) {
+    return function () {
+      seed = (seed + 0x6D2B79F5) | 0;
+      let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function foodTexture(T, f) {
+    const c = document.createElement("canvas");
+    c.width = c.height = 256;
+    const g = c.getContext("2d");
+    const grd = g.createRadialGradient(118, 110, 8, 128, 128, 132);
+    grd.addColorStop(0, f.base[0]); grd.addColorStop(1, f.base[1]);
+    g.fillStyle = grd; g.fillRect(0, 0, 256, 256);
+    const r = rng(f.seed);
+    f.specks.forEach((s) => {
+      g.fillStyle = s.c; g.globalAlpha = s.a || 1;
+      for (let i = 0; i < s.n; i++) {
+        const ang = r() * Math.PI * 2, rad = Math.sqrt(r()) * 116;
+        const x = 128 + Math.cos(ang) * rad, y = 128 + Math.sin(ang) * rad;
+        g.beginPath();
+        if (s.e) g.ellipse(x, y, s.w * (0.6 + r() * 0.6), s.h * (0.6 + r() * 0.6), r() * Math.PI, 0, Math.PI * 2);
+        else g.arc(x, y, s.size * (0.6 + r() * 0.7), 0, Math.PI * 2);
+        g.fill();
+      }
+    });
+    g.globalAlpha = 1;
+    const tex = new T.CanvasTexture(c);
+    tex.encoding = T.sRGBEncoding;
+    tex.anisotropy = 4;
+    return tex;
+  }
+  function makeEnv(T, renderer) {
+    const env = new T.Scene();
+    env.add(new T.Mesh(new T.BoxGeometry(12, 8, 12), new T.MeshBasicMaterial({ color: 0x221a2a, side: T.BackSide })));
+    const panel = (w, h, pos, rot, color, k) => {
+      const m = new T.MeshBasicMaterial({ color: color, side: T.DoubleSide });
+      m.color.multiplyScalar(k);
+      const p = new T.Mesh(new T.PlaneGeometry(w, h), m);
+      p.position.set(pos[0], pos[1], pos[2]); p.rotation.set(rot[0], rot[1], rot[2]);
+      env.add(p);
+    };
+    panel(7, 2.4, [0, 3.9, 0], [Math.PI / 2, 0, 0], 0xffffff, 3.4);
+    panel(3, 4, [-5.9, 1, 0.5], [0, Math.PI / 2, 0], 0xffe1b5, 2.2);
+    panel(3, 4, [5.9, 1, -1], [0, -Math.PI / 2, 0], 0xcdb6ff, 1.8);
+    panel(5, 1.2, [0, 1.2, -5.9], [0, 0, 0], 0xffffff, 1.3);
+    panel(5, 1.2, [0, 0.6, 5.9], [0, Math.PI, 0], 0xffffff, 0.9);
+    const pm = new T.PMREMGenerator(renderer);
+    const tex = pm.fromScene(env, 0.035).texture;
+    pm.dispose();
+    return tex;
+  }
+
+  function initThali(canvas, stage, onPick) {
+    const T = window.THREE;
+    if (!T) throw new Error("Three.js did not load");
+    const renderer = new T.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.outputEncoding = T.sRGBEncoding;
+    renderer.toneMapping = T.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.0;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = T.PCFSoftShadowMap;
+    renderer.setClearColor(0x000000, 0);
+
+    const scene = new T.Scene();
+    scene.environment = makeEnv(T, renderer);
+    const camera = new T.PerspectiveCamera(30, 1, 0.1, 80);
+
+    const key = new T.DirectionalLight(0xfff0dc, 1.4);
+    key.position.set(2.2, 7, 3.2);
+    key.castShadow = true;
+    key.shadow.mapSize.set(1024, 1024);
+    const sc = key.shadow.camera;
+    sc.left = -3.2; sc.right = 3.2; sc.top = 3.2; sc.bottom = -3.2; sc.near = 1; sc.far = 16;
+    key.shadow.bias = -0.0004;
+    key.shadow.radius = 5;
+    scene.add(key);
+    const rim = new T.DirectionalLight(0xc6aaff, 0.7);
+    rim.position.set(-4, 2.5, -3);
+    scene.add(rim);
+    scene.add(new T.HemisphereLight(0xe9dcff, 0x120a18, 0.45));
+
+    const ground = new T.Mesh(new T.PlaneGeometry(14, 14), new T.ShadowMaterial({ opacity: 0.5 }));
+    ground.rotation.x = -Math.PI / 2;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    const plateGroup = new T.Group();
+    scene.add(plateGroup);
+    const v2 = (pts) => pts.map((p) => new T.Vector2(p[0], p[1]));
+    const steel = new T.MeshStandardMaterial({ color: 0xb9b8c6, metalness: 1, roughness: 0.2, side: T.DoubleSide });
+    const plate = new T.Mesh(new T.LatheGeometry(v2([[0.001, 0], [1.78, 0], [1.9, 0.03], [1.98, 0.11], [2.03, 0.21], [2.05, 0.25], [2.01, 0.27], [1.96, 0.18], [1.87, 0.085], [1.75, 0.052], [0.001, 0.052]]), 128), steel);
+    plate.castShadow = true; plate.receiveShadow = true;
+    plateGroup.add(plate);
+    [1.72, 0.3].forEach((r) => {
+      const ring = new T.Mesh(new T.TorusGeometry(r, 0.008, 6, 160), steel);
+      ring.rotation.x = Math.PI / 2; ring.position.y = 0.053;
+      plateGroup.add(ring);
+    });
+
+    const katoriGeo = new T.LatheGeometry(v2([[0.001, 0], [0.6, 0], [0.78, 0.04], [0.92, 0.2], [0.99, 0.46], [1.0, 0.56], [0.97, 0.575], [0.935, 0.47], [0.865, 0.24], [0.72, 0.1], [0.55, 0.072], [0.001, 0.072]]), 72);
+    const kSteel = new T.MeshStandardMaterial({ color: 0xd2d1dc, metalness: 1, roughness: 0.17, side: T.DoubleSide });
+    const foodGeo = new T.CylinderGeometry(0.9, 0.9, 0.03, 56);
+    const FOOD = {
+      b: { base: ["#F9E084", "#E2B845"], rough: 0.85, seed: 3, specks: [
+        { c: "#FFF3BF", n: 150, e: 1, w: 8, h: 3, a: 0.65 }, { c: "#7DBA4F", n: 22, size: 6 },
+        { c: "#B5773F", n: 18, e: 1, w: 7, h: 5 }, { c: "#2E5A28", n: 8, e: 1, w: 10, h: 4 }, { c: "#4E8F3A", n: 30, size: 2 }] },
+      f: { base: ["#D4EBB0", "#98C474"], rough: 0.55, seed: 5, specks: [{ c: "#F59AA6", n: 9, size: 16, a: 0.9 }, { c: "#FBE3C4", n: 50, size: 2.2 }] },
+      l: { base: ["#F4C556", "#D8932B"], rough: 0.4, seed: 9, specks: [
+        { c: "#3B2416", n: 46, size: 2.4 }, { c: "#B5381F", n: 9, size: 3.6 }, { c: "#3F8A3A", n: 22, size: 3 }, { c: "#FFEDB0", n: 12, size: 11, a: 0.28 }] },
+      s: { base: ["#EEE3FB", "#C9B0EE"], rough: 0.22, seed: 11, specks: [{ c: "#FAF5FF", n: 28, e: 1, w: 22, h: 4, a: 0.45 }, { c: "#8A5A3C", n: 14, size: 1.8, a: 0.6 }] },
+      d: { base: ["#EE9E66", "#C9622F"], rough: 0.5, seed: 13, specks: [{ c: "#F6D6BC", n: 16, e: 1, w: 20, h: 5, a: 0.45 }, { c: "#3F8A3A", n: 22, size: 3 }] }
+    };
+    const RING = 1.1, pickables = [], items = [];
+    Object.keys(MEALS).forEach((id, i) => {
+      const m = MEALS[id], a = (m.a * Math.PI) / 180, f = FOOD[id];
+      const g = new T.Group();
+      g.position.set(Math.cos(a) * RING, 0.052, Math.sin(a) * RING);
+      plateGroup.add(g);
+      const inner = new T.Group();
+      g.add(inner);
+      const bowl = new T.Mesh(katoriGeo, kSteel);
+      bowl.castShadow = true; bowl.receiveShadow = true;
+      inner.add(bowl);
+      const food = new T.Mesh(foodGeo, new T.MeshStandardMaterial({ map: foodTexture(T, f), roughness: f.rough, metalness: 0 }));
+      food.position.y = 0.43; food.receiveShadow = true;
+      inner.add(food);
+      const own = [bowl, food];
+      if (id === "d") {
+        const r = rng(7);
+        const cubeMat = new T.MeshStandardMaterial({ color: 0xf6eee0, roughness: 0.75 });
+        const cubeGeo = new T.BoxGeometry(0.17, 0.12, 0.17);
+        for (let k = 0; k < 6; k++) {
+          const cube = new T.Mesh(cubeGeo, cubeMat);
+          const ang = r() * Math.PI * 2, rad = 0.12 + r() * 0.55;
+          cube.position.set(Math.cos(ang) * rad, 0.49, Math.sin(ang) * rad);
+          cube.rotation.set(r() * 0.4, r() * Math.PI, r() * 0.4);
+          cube.castShadow = true;
+          inner.add(cube); own.push(cube);
+        }
+        const peaMat = new T.MeshStandardMaterial({ color: 0x6fb04a, roughness: 0.5 });
+        const peaGeo = new T.SphereGeometry(0.05, 12, 10);
+        for (let k = 0; k < 8; k++) {
+          const pea = new T.Mesh(peaGeo, peaMat);
+          const ang = r() * Math.PI * 2, rad = 0.1 + r() * 0.65;
+          pea.position.set(Math.cos(ang) * rad, 0.47, Math.sin(ang) * rad);
+          inner.add(pea);
+        }
+      }
+      own.forEach((o) => { o.userData.id = id; pickables.push(o); });
+      const glow = new T.Mesh(
+        new T.RingGeometry(m.R * 1.06, m.R * 1.2, 64),
+        new T.MeshBasicMaterial({ color: 0x9d6ff0, transparent: true, opacity: 0, depthWrite: false })
+      );
+      glow.rotation.x = -Math.PI / 2;
+      glow.position.set(g.position.x, 0.056, g.position.z);
+      plateGroup.add(glow);
+      items.push({ id: id, i: i, g: g, inner: inner, glow: glow, R: m.R, a: a, lift: 0, s: 1 });
+    });
+
+    const look = new T.Vector3(0, 0, 0.3);
+    function fit() {
+      const w = Math.max(1, stage.clientWidth), h = Math.max(1, stage.clientHeight);
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      const vHalf = T.MathUtils.degToRad(camera.fov / 2);
+      const hHalf = Math.atan(Math.tan(vHalf) * camera.aspect);
+      const dist = Math.max(2.45 / Math.tan(hHalf), 2.2 / Math.tan(vHalf));
+      const el = T.MathUtils.degToRad(52);
+      camera.position.set(0, Math.sin(el) * dist, Math.cos(el) * dist + look.z);
+      camera.lookAt(look);
+      camera.updateProjectionMatrix();
+    }
+    fit();
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(stage);
+    else window.addEventListener("resize", fit);
+
+    const ray = new T.Raycaster(), ndc = new T.Vector2();
+    function hit(e) {
+      const r = canvas.getBoundingClientRect();
+      ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+      ray.setFromCamera(ndc, camera);
+      const h = ray.intersectObjects(pickables, false);
+      return h.length ? h[0].object.userData.id : null;
+    }
+    const hintEl = $("#hint");
+    const hideHint = () => hintEl.classList.add("gone");
+    let drag = null, rot = 0, rotTarget = -0.5, selected = null;
+    canvas.addEventListener("pointerdown", (e) => {
+      drag = { last: e.clientX, moved: 0, t: performance.now(), id: e.pointerId, cap: false };
+    });
+    canvas.addEventListener("pointermove", (e) => {
+      if (!drag) { if (e.pointerType === "mouse") canvas.style.cursor = hit(e) ? "pointer" : "grab"; return; }
+      const dx = e.clientX - drag.last;
+      drag.last = e.clientX;
+      drag.moved += Math.abs(dx);
+      if (drag.moved > 5) {
+        rotTarget += dx * 0.011;
+        if (!drag.cap) { try { canvas.setPointerCapture(drag.id); } catch (err) { /* ignore */ } drag.cap = true; }
+        hideHint();
+      }
+    });
+    canvas.addEventListener("pointerup", (e) => {
+      if (!drag) return;
+      const d = drag;
+      drag = null;
+      if (d.moved < 6 && performance.now() - d.t < 450) {
+        const id = hit(e);
+        if (id) { hideHint(); onPick(id); }
+      }
+    });
+    canvas.addEventListener("pointercancel", () => { drag = null; });
+
+    function select(id) {
+      selected = id;
+      if (!id) return;
+      const it = items.find((x) => x.id === id);
+      let target = it.a - Math.PI / 2;
+      const tau = Math.PI * 2;
+      target += tau * Math.round((rotTarget - target) / tau);
+      rotTarget = target;
+    }
+
+    let visible = true;
+    if (window.IntersectionObserver) new IntersectionObserver((en) => { visible = en[0].isIntersecting; }).observe(stage);
+    const easeOut = (x) => 1 - Math.pow(1 - x, 3);
+    const easeBack = (x) => { const c1 = 1.5, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+    const clock = new T.Clock();
+    let t0 = null;
+    function loop() {
+      requestAnimationFrame(loop);
+      const dt = Math.min(0.05, clock.getDelta());
+      if (!visible) return;
+      const t = clock.elapsedTime;
+      if (t0 === null) t0 = t;
+      const ta = reduce ? 99 : t - t0;
+      if (!selected && !drag && !reduce) rotTarget += dt * 0.16;
+      rot += (rotTarget - rot) * (1 - Math.exp(-dt * 4.5));
+      plateGroup.rotation.y = rot;
+      const pp = clamp(ta / 0.9, 0, 1);
+      plateGroup.position.y = (1 - easeOut(pp)) * -0.35;
+      plateGroup.scale.setScalar(0.92 + 0.08 * easeOut(pp));
+      const k = 1 - Math.exp(-dt * 7);
+      items.forEach((it) => {
+        const on = it.id === selected;
+        it.lift += ((on ? 0.34 : 0) - it.lift) * k;
+        it.s += ((on ? 1.1 : selected ? 0.94 : 1) - it.s) * k;
+        const p = clamp((ta - 0.35 - it.i * 0.12) / 0.7, 0, 1);
+        const pop = p <= 0 ? 0.001 : 0.75 + 0.25 * easeBack(p);
+        it.g.position.y = 0.052 + it.lift + (1 - easeOut(p)) * 1.6;
+        it.inner.scale.setScalar(it.R * it.s * pop);
+        it.glow.material.opacity += ((on ? 0.9 : 0) - it.glow.material.opacity) * k;
+      });
+      renderer.render(scene, camera);
+    }
+    loop();
+    return { select: select };
+  }
+
+  const stage = $("#stage");
+  try { thali = initThali($("#thali"), stage, scrollToStep); }
+  catch (err) { thali = null; stage.classList.add("no3d"); }
+  $$(".k2d").forEach((k) => k.addEventListener("click", () => scrollToStep(k.dataset.id)));
+
+  // Count the day's total up on load.
+  if (!reduce) {
+    capKcal._cur = [0]; capKcal.textContent = "0";
+    setTimeout(() => { if (!currentMeal) tween(capKcal, [2020], (v) => fmt(v[0]), 1400); }, 700);
+  }
+
+  (function storyObserver() {
+    if (!window.IntersectionObserver) return;
+    const mq = window.matchMedia("(min-width: 960px)");
+    let io = null;
+    function build() {
+      if (io) io.disconnect();
+      io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (!en.isIntersecting) return;
+          const id = en.target.dataset.meal;
+          setMeal(id && id !== "all" ? id : null);
+        });
+      }, { rootMargin: mq.matches ? "-45% 0px -45% 0px" : "-62% 0px -16% 0px" });
+      $$(".step").forEach((s) => io.observe(s));
+      io.observe($(".intro"));
+    }
+    build();
+    if (mq.addEventListener) mq.addEventListener("change", build);
+  })();
+
+  /* ================= Profile + age ================= */
+  const W = $("#w"), H = $("#h"), A = $("#a");
+  const ACT_DESC = {
+    "1.2": "Desk job, no exercise yet.",
+    "1.375": "Desk job plus strength training 3 times a week.",
+    "1.55": "On your feet a lot, or training 4–5 times a week."
+  };
+  function bmiOf(p) { return p.w / Math.pow(p.h / 100, 2); }
+  function setFill(inp) { inp.style.setProperty("--p", ((inp.value - inp.min) / (inp.max - inp.min)) * 100 + "%"); }
+  function syncInputs() {
+    W.value = state.profile.w; H.value = state.profile.h; A.value = state.profile.a;
+    const r = $('input[name="act"][value="' + state.profile.act + '"]');
+    if (r) r.checked = true;
+  }
+  let lastBand = null;
+  function renderProfile() {
+    const p = state.profile;
+    [W, H, A].forEach(setFill);
+    $("#w-out").textContent = (p.w % 1 ? p.w.toFixed(1) : p.w) + " kg";
+    const tin = Math.round(p.h / 2.54);
+    $("#h-out").textContent = p.h + " cm · " + Math.floor(tin / 12) + "′" + (tin % 12) + "″";
+    $("#a-out").textContent = p.a + " yrs";
+    $("#act-desc").textContent = ACT_DESC[String(p.act)] || "";
+    const maint = Math.round(((10 * p.w + 6.25 * p.h - 5 * p.a - 161) * p.act) / 10) * 10;
+    const bmi = bmiOf(p);
+    tween($("#r-kcal"), bmi >= 23 ? [maint, maint] : [maint + 300, maint + 400], (v) => (Math.round(v[0]) === Math.round(v[1]) ? fmt(v[0]) : fmt(v[0]) + "–" + fmt(v[1])));
+    tween($("#r-pro"), [p.w * 1.2, p.w * 1.6], (v) => Math.round(v[0]) + "–" + Math.round(v[1]));
+    tween($("#r-maint"), [maint], (v) => fmt(v[0]));
+    $("#r-note").textContent = bmi < 18.5
+      ? "Your BMI is under 18.5: aim for the top of this range."
+      : bmi < 23 ? "Aim for the middle of this range and train hard."
+      : "Your BMI is 23 or more by Indian cut-offs, so eat at maintenance and focus on training.";
+    let cur = null;
+    $$(".band").forEach((b) => {
+      const on = p.a >= +b.dataset.min && p.a <= +b.dataset.max;
+      b.classList.toggle("is-you", on);
+      if (on) cur = b;
+    });
+    if (cur) {
+      $("#age-now").textContent = "You're " + p.a + ", so the " + cur.querySelector(".band-age").textContent + " card applies to you.";
+      if (cur !== lastBand) {
+        lastBand = cur;
+        const box = $("#bands");
+        if (box.scrollWidth > box.clientWidth + 4) box.scrollTo({ left: Math.max(0, cur.offsetLeft - 2), behavior: reduce ? "auto" : "smooth" });
+      }
+    }
+  }
+  function onProfileInput() {
+    state.profile.w = +W.value; state.profile.h = +H.value; state.profile.a = +A.value;
+    const r = $('input[name="act"]:checked');
+    state.profile.act = r ? +r.value : 1.375;
+    renderProfile(); renderChecks(); save();
+  }
+  [W, H, A].forEach((el) => el.addEventListener("input", onProfileInput));
+  $$('input[name="act"]').forEach((r) => r.addEventListener("change", onProfileInput));
+  $("#reset-profile").addEventListener("click", () => {
+    state.profile = Object.assign({}, EX_PROFILE);
+    syncInputs(); renderProfile(); renderChecks(); save();
+  });
+
+  /* ================= Health check ================= */
+  const LEVEL_NAME = { ok: "Normal", watch: "Watch", act: "Act", urgent: "Urgent", none: "Not entered" };
+  const RANK = { none: -1, ok: 0, watch: 1, act: 2, urgent: 3 };
+  const num = (k) => { const v = state.labs[k]; return v === null || v === undefined || v === "" || !isFinite(+v) ? null : +v; };
+  function egfrOf(scr, age) {
+    const k = 0.7, alpha = -0.241;
+    return 142 * Math.pow(Math.min(scr / k, 1), alpha) * Math.pow(Math.max(scr / k, 1), -1.2) * Math.pow(0.9938, age) * 1.012;
+  }
+  const MARKERS = [
+    { group: "Body", key: "bmi", name: "BMI", sub: "From your weight and height", unit: "kg/m²", computed: true,
+      scale: [14, 32], zones: [[14, 16, "urgent"], [16, 17, "act"], [17, 18.5, "watch"], [18.5, 23, "ok"], [23, 25, "watch"], [25, 32, "act"]],
+      value: () => bmiOf(state.profile), fmt: (v) => v.toFixed(1),
+      msg: (v) => v < 16 ? "Severe thinness. See a doctor before starting any plan." : v < 17 ? "Moderate thinness. See a doctor, then gain slowly with this plan."
+        : v < 18.5 ? "Mild thinness. This plan is built for you." : v < 23 ? "Healthy for Indians. Gain muscle with training, not fat."
+        : v < 25 ? "Overweight by Indian cut-offs. Eat at maintenance and keep training." : "Obese by Indian cut-offs. Skip the calorie surplus and see your doctor.",
+      src: "Indian consensus (2009) · WHO thinness grades" },
+    { group: "Body", key: "waist", name: "Waist", sub: "At the navel, breathing out", unit: "cm", inputs: [{ k: "waist", step: 0.5 }],
+      scale: [55, 100], zones: [[55, 72, "ok"], [72, 80, "watch"], [80, 100, "act"]],
+      value: () => num("waist"), fmt: (v) => String(v),
+      msg: (v) => v < 72 ? "Below the first Indian action level (72 cm)." : v < 80 ? "Action level 1 for Indian women. Make sure new weight isn't going here."
+        : "Abdominal obesity by the Indian cut-off (80 cm). Cut sweets and stop the calorie surplus.",
+      src: "Indian consensus (2009)" },
+    { group: "Body", key: "whtr", name: "Waist ÷ height", sub: "From your waist and height", unit: "", computed: true,
+      scale: [0.35, 0.7], zones: [[0.35, 0.5, "ok"], [0.5, 0.6, "watch"], [0.6, 0.7, "act"]],
+      value: () => { const w = num("waist"); return w ? w / state.profile.h : null; }, fmt: (v) => v.toFixed(2),
+      msg: (v) => v < 0.5 ? "Your waist is under half your height. Good." : v < 0.6 ? "Waist is over half your height. Gain muscle, not belly." : "High. Talk to your doctor before gaining more.",
+      src: "Common cut-off: under 0.5" },
+    { group: "Body", key: "bp", name: "Blood pressure", sub: "Top / bottom number · bar shows the top", unit: "mmHg", inputs: [{ k: "sys", step: 1, short: true }, { k: "dia", step: 1, short: true }],
+      scale: [80, 190], zones: [[80, 90, "watch"], [90, 130, "ok"], [130, 140, "watch"], [140, 180, "act"], [180, 190, "urgent"]],
+      value: () => num("sys"), fmt: (v) => v + "/" + (num("dia") === null ? "–" : num("dia")),
+      level: (v) => {
+        const d = num("dia");
+        if (v >= 180 || (d !== null && d >= 110)) return "urgent";
+        if (v >= 140 || (d !== null && d >= 90)) return "act";
+        if (v < 90 || (d !== null && d < 60)) return "watch";
+        if (v >= 130 || (d !== null && d >= 85)) return "watch";
+        return "ok";
+      },
+      msg: (v, lvl) => {
+        const d = num("dia");
+        if (lvl === "urgent") return "Very high. Get medical help today, especially with headache or blurred vision.";
+        if (lvl === "act") return "High blood pressure by the Indian definition (140/90). See your doctor.";
+        if (v < 90 || (d !== null && d < 60)) return "Low. Fine if you feel well; see a doctor if you get dizzy or faint.";
+        if (lvl === "watch") return "High-normal. Cut down on salt and recheck in a month.";
+        return "Normal.";
+      },
+      src: "Indian Guidelines on Hypertension · ISH 2020" },
+    { group: "Blood & vitamins", key: "hb", name: "Haemoglobin", sub: "Non-pregnant women", unit: "g/dL", inputs: [{ k: "hb", step: 0.1 }],
+      scale: [6, 16], zones: [[6, 8, "urgent"], [8, 11, "act"], [11, 12, "watch"], [12, 16, "ok"]],
+      value: () => num("hb"), fmt: (v) => v.toFixed(1),
+      msg: (v) => v < 8 ? "Severe anaemia. See a doctor now." : v < 11 ? "Moderate anaemia. See your doctor about iron treatment."
+        : v < 12 ? "Mild anaemia. Eat iron-rich food with vitamin C and recheck in 3 months." : "No anaemia.",
+      src: "Anemia Mukt Bharat" },
+    { group: "Blood & vitamins", key: "ferritin", name: "Ferritin", sub: "Iron stores", unit: "ng/mL", inputs: [{ k: "ferritin", step: 1 }],
+      scale: [0, 200], zones: [[0, 15, "act"], [15, 30, "watch"], [30, 150, "ok"], [150, 200, "watch"]],
+      value: () => num("ferritin"), fmt: (v) => String(Math.round(v)),
+      msg: (v) => v < 15 ? "Iron deficiency. Ask your doctor about iron tablets." : v < 30 ? "Low iron stores. Add dal, chana, green leafy vegetables and eggs."
+        : v <= 150 ? "Healthy iron stores." : "High. Ask your doctor; it can mean inflammation.",
+      src: "WHO (2020)" },
+    { group: "Blood & vitamins", key: "vitd", name: "Vitamin D", sub: "25-OH vitamin D", unit: "ng/mL", inputs: [{ k: "vitd", step: 1 }],
+      scale: [0, 120], zones: [[0, 20, "act"], [20, 30, "watch"], [30, 100, "ok"], [100, 120, "watch"]],
+      value: () => num("vitd"), fmt: (v) => String(Math.round(v)),
+      msg: (v) => v < 20 ? "Deficient. Doctors usually prescribe a vitamin D course." : v < 30 ? "Insufficient. Get some sunlight and ask about a supplement."
+        : v <= 100 ? "Healthy." : "Too high. Stop vitamin D supplements and tell your doctor.",
+      src: "Common lab cut-offs" },
+    { group: "Blood & vitamins", key: "b12", name: "Vitamin B12", sub: "Often low in vegetarians", unit: "pg/mL", inputs: [{ k: "b12", step: 1 }],
+      scale: [100, 1000], zones: [[100, 200, "act"], [200, 300, "watch"], [300, 1000, "ok"]],
+      value: () => num("b12"), fmt: (v) => String(Math.round(v)),
+      msg: (v) => v < 200 ? "Deficient. Your doctor may prescribe B12." : v < 300 ? "Borderline. Add milk, curd, paneer and eggs, then recheck." : "Healthy.",
+      src: "Common lab cut-offs" },
+    { group: "Sugar & thyroid", key: "fbs", name: "Fasting sugar", sub: "After 8–10 hours without food", unit: "mg/dL", inputs: [{ k: "fbs", step: 1 }],
+      scale: [50, 200], zones: [[50, 70, "watch"], [70, 100, "ok"], [100, 126, "watch"], [126, 200, "act"]],
+      value: () => num("fbs"), fmt: (v) => String(Math.round(v)),
+      msg: (v) => v < 70 ? "Low. Don't skip meals, and mention it to your doctor." : v < 100 ? "Normal."
+        : v < 126 ? "Prediabetes range. Keep sweets low and recheck in 3 months." : "Diabetes range. See your doctor before adding a gainer or dates.",
+      src: "ICMR diabetes guidelines" },
+    { group: "Sugar & thyroid", key: "a1c", name: "HbA1c", sub: "3-month sugar average", unit: "%", inputs: [{ k: "a1c", step: 0.1 }],
+      scale: [4, 9], zones: [[4, 5.7, "ok"], [5.7, 6.5, "watch"], [6.5, 9, "act"]],
+      value: () => num("a1c"), fmt: (v) => v.toFixed(1),
+      msg: (v) => v < 5.7 ? "Normal." : v < 6.5 ? "Prediabetes range. Limit sugary add-ins in the shake." : "Diabetes range. See your doctor and avoid sugary gainers.",
+      src: "ICMR diabetes guidelines" },
+    { group: "Sugar & thyroid", key: "tsh", name: "TSH", sub: "Thyroid signal", unit: "mIU/L", inputs: [{ k: "tsh", step: 0.01 }],
+      scale: [0, 12], zones: [[0, 0.4, "act"], [0.4, 4.5, "ok"], [4.5, 10, "watch"], [10, 12, "act"]],
+      value: () => num("tsh"), fmt: (v) => String(v),
+      msg: (v) => v < 0.4 ? "Low. An overactive thyroid can cause weight loss, so see your doctor before this plan." : v < 4.5 ? "Normal."
+        : v <= 10 ? "Mildly high. Recheck with your doctor in 2–3 months." : "High. An underactive thyroid is likely; see your doctor.",
+      src: "Common lab range; your lab's may differ" },
+    { group: "Kidneys", key: "egfr", name: "Kidney filtering (eGFR)", sub: "Type creatinine; eGFR uses your age", unit: "mg/dL", inputs: [{ k: "creat", step: 0.01 }],
+      scale: [0, 130], zones: [[0, 30, "urgent"], [30, 60, "act"], [60, 90, "watch"], [90, 130, "ok"]],
+      value: () => { const c = num("creat"); return c ? egfrOf(c, state.profile.a) : null; }, fmt: (v) => String(Math.round(v)),
+      msg: (v) => v >= 90 ? "Normal kidney filtering for your age." : v >= 60 ? "Mildly lower. Common with age; fine if your urine test is normal."
+        : v >= 30 ? "Reduced kidney function. No protein powder without your doctor." : "Severely reduced. See a kidney doctor now.",
+      src: "KDIGO · CKD-EPI 2021" },
+    { group: "Kidneys", key: "acr", name: "Urine albumin (ACR)", sub: "Albumin-to-creatinine ratio", unit: "mg/g", inputs: [{ k: "acr", step: 1 }],
+      scale: [0, 400], zones: [[0, 30, "ok"], [30, 300, "act"], [300, 400, "urgent"]],
+      value: () => num("acr"), fmt: (v) => String(Math.round(v)),
+      msg: (v) => v < 30 ? "No protein leaking into urine." : v < 300 ? "Protein in urine. Skip protein powder and see your doctor." : "High protein in urine. See a doctor soon.",
+      src: "KDIGO" }
+  ];
+  const GROUPS = ["Body", "Blood & vitamins", "Sugar & thyroid", "Kidneys"];
+  const zoneOf = (m, v) => { for (const z of m.zones) { if (v < z[1]) return z; } return m.zones[m.zones.length - 1]; };
+  const pctOf = (m, v) => clamp(((v - m.scale[0]) / (m.scale[1] - m.scale[0])) * 100, 0, 100);
+
+  function cardHTML(m) {
+    const span = m.scale[1] - m.scale[0];
+    const zones = m.zones.map((z) => '<span class="z z-' + z[2] + '" style="width:' + (((z[1] - z[0]) / span) * 100).toFixed(3) + '%"></span>').join("");
+    let ticks = "", lastPct = -100;
+    m.zones.slice(0, -1).forEach((z) => {
+      const p = ((z[1] - m.scale[0]) / span) * 100;
+      if (p - lastPct >= 9) { ticks += '<span style="left:' + p.toFixed(2) + '%">' + z[1] + "</span>"; lastPct = p; }
+    });
+    let val;
+    if (m.computed) {
+      val = '<output class="mk-out" id="out-' + m.key + '">–</output>' + (m.unit ? '<span class="unit">' + m.unit + "</span>" : "");
+    } else {
+      val = m.inputs.map((inp, i) =>
+        (i ? '<span class="mk-sep">/</span>' : "") +
+        '<input class="mk-in' + (inp.short ? " short" : "") + '" id="in-' + inp.k + '" data-lab="' + inp.k + '" type="number" inputmode="decimal" min="0" step="' + inp.step + '" placeholder="–" aria-label="' + m.name + (m.inputs.length > 1 ? (i ? " bottom number" : " top number") : "") + '">'
+      ).join("") + '<span class="unit">' + m.unit + "</span>";
+      if (m.key === "egfr") val += '<span class="mk-calc">eGFR <b id="out-egfr">–</b> mL/min/1.73m²</span>';
+    }
+    return '<article class="mk" id="mk-' + m.key + '" data-level="none">' +
+      '<div class="mk-top"><div><h4>' + m.name + '</h4><p class="mk-sub">' + m.sub + '</p></div><span class="lvl" data-level="none">Not entered</span></div>' +
+      '<div class="mk-val">' + val + "</div>" +
+      '<div><div class="zbar"><div class="zones">' + zones + '</div><span class="zmark" hidden></span></div><div class="zticks">' + ticks + "</div></div>" +
+      '<p class="mk-msg"></p><p class="mk-src">' + m.src + "</p></article>";
+  }
+  (function buildChecks() {
+    $("#mk-groups").innerHTML = GROUPS.map((g) =>
+      '<div class="mk-group"><h3 class="mk-group-h">' + g + '</h3><div class="mk-grid">' + MARKERS.filter((m) => m.group === g).map(cardHTML).join("") + "</div></div>"
+    ).join("");
+    $$(".mk-in").forEach((inp) => {
+      inp.addEventListener("input", () => {
+        const raw = inp.value.trim();
+        state.labs[inp.dataset.lab] = raw === "" ? null : +raw;
+        state.example = false;
+        renderChecks(); save();
+      });
+    });
+  })();
+  function syncLabInputs() {
+    $$(".mk-in").forEach((inp) => { const v = state.labs[inp.dataset.lab]; inp.value = v === null || v === undefined ? "" : v; });
+  }
+
+  let lastResults = {};
+  function renderChecks() {
+    const counts = { ok: 0, watch: 0, act: 0, urgent: 0, none: 0 }, results = {};
+    MARKERS.forEach((m) => {
+      const card = $("#mk-" + m.key), chip = card.querySelector(".lvl"), mark = card.querySelector(".zmark"), msgEl = card.querySelector(".mk-msg");
+      const v = m.value();
+      let level = "none", msg = m.computed ? "Add your waist to see this." : "Add this number from your report.";
+      if (v !== null && isFinite(v)) {
+        level = m.level ? m.level(v) : zoneOf(m, v)[2];
+        msg = m.msg(v, level);
+        mark.hidden = false;
+        mark.style.left = pctOf(m, v) + "%";
+      } else mark.hidden = true;
+      card.dataset.level = level;
+      chip.dataset.level = level;
+      chip.textContent = LEVEL_NAME[level];
+      msgEl.textContent = msg;
+      const out = $("#out-" + m.key);
+      if (out) out.textContent = v !== null && isFinite(v) ? m.fmt(v) : "–";
+      counts[level]++;
+      results[m.key] = { v: v, level: level, m: m };
+    });
+    lastResults = results;
+    renderSummary(counts, results);
+  }
+
+  function renderSummary(c, r) {
+    const entered = c.ok + c.watch + c.act + c.urgent;
+    const C = 2 * Math.PI * 48;
+    let offset = 0;
+    ["ok", "watch", "act", "urgent"].forEach((k) => {
+      const len = entered ? (c[k] / entered) * C : 0;
+      const arc = $("#arc-" + k);
+      const gap = len > 4 ? 2.5 : 0;
+      arc.setAttribute("stroke-dasharray", Math.max(0, len - gap).toFixed(2) + " " + C.toFixed(2));
+      arc.setAttribute("stroke-dashoffset", (-offset).toFixed(2));
+      offset += len;
+    });
+    $("#d-big").textContent = c.ok;
+    $("#d-small").textContent = "of " + entered + " normal";
+    const names = (lvl) => MARKERS.filter((m) => r[m.key].level === lvl).map((m) => m.name).join(", ");
+    let tone, title, text;
+    if (!entered) { tone = "none"; title = "Add your numbers"; text = "Type values from your latest reports into the cards below."; }
+    else if (c.urgent) { tone = "urgent"; title = "See a doctor before starting"; text = "Urgent: " + names("urgent") + "." + (c.act ? " Also flagged: " + names("act") + "." : ""); }
+    else if (c.act) { tone = "act"; title = "Start the food plan, see your doctor this week"; text = "Show your doctor: " + names("act") + "." + (c.watch ? " Keep an eye on: " + names("watch") + "." : ""); }
+    else if (c.watch) { tone = "watch"; title = "Good to start"; text = "Keep an eye on: " + names("watch") + ". Recheck in 3 months."; }
+    else { tone = "ok"; title = "All clear. Start the plan."; text = "Recheck your kidney test and blood count after 12 weeks."; }
+    const sum = $("#summary");
+    sum.dataset.tone = tone;
+    $("#v-title").textContent = title;
+    $("#v-text").textContent = text;
+
+    const eg = r.egfr.v, ac = r.acr.v;
+    let kt, ktext;
+    if (eg === null && ac === null) { kt = "none"; ktext = "Add creatinine and urine ACR to check your kidneys before using protein powder."; }
+    else if ((eg !== null && eg < 60) || (ac !== null && ac >= 30)) { kt = "act"; ktext = "Kidney flag: skip protein powder and gainers until a doctor reviews your kidneys. Home food is fine."; }
+    else if (eg === null || ac === null) { kt = "watch"; ktext = "One kidney number is missing. Add " + (eg === null ? "creatinine" : "urine ACR") + " to complete the check."; }
+    else if (eg < 90) { kt = "ok"; ktext = "Kidneys look fine. An eGFR of 60–89 is common with age when the urine test is normal; retest yearly."; }
+    else { kt = "ok"; ktext = "Kidneys look healthy (eGFR " + Math.round(eg) + "). The protein target in this plan, 1.2–1.6 g per kg, is fine."; }
+    $("#kidney").dataset.tone = kt;
+    $("#kidney-text").textContent = ktext;
+
+    $("#ex-state").textContent = state.example ? "Showing example values for a thin 34-year-old." : "Your values, saved on this device.";
+    $("#use-example").hidden = state.example;
+  }
+
+  function summaryText() {
+    const p = state.profile, lines = [];
+    lines.push("Health check, " + new Date().toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }));
+    lines.push("Woman, " + p.a + " yrs, " + p.w + " kg, " + p.h + " cm");
+    MARKERS.forEach((m) => {
+      const res = lastResults[m.key];
+      if (!res || res.level === "none") return;
+      let line = m.name + ": " + m.fmt(res.v);
+      if (m.key === "egfr") line += " (creatinine " + num("creat") + " mg/dL)";
+      else if (m.unit) line += " " + m.unit;
+      lines.push(line + " - " + LEVEL_NAME[res.level]);
+    });
+    lines.push("Verdict: " + $("#v-title").textContent);
+    lines.push("Kidneys: " + $("#kidney-text").textContent);
+    return lines.join("\n");
+  }
+  $("#copy-sum").addEventListener("click", () => {
+    const text = summaryText(), box = $("#copy-box");
+    const fallback = () => { box.hidden = false; box.value = text; box.focus(); box.select(); toast("Select all and copy the text"); };
+    try {
+      navigator.clipboard.writeText(text).then(() => { box.hidden = true; toast("Copied. Paste it into WhatsApp or email."); }, fallback);
+    } catch (e) { fallback(); }
+  });
+  $("#clear-labs").addEventListener("click", () => {
+    Object.keys(EX_LABS).forEach((k) => { state.labs[k] = null; });
+    state.example = false;
+    syncLabInputs(); renderChecks(); save();
+    toast("Cleared. Type in your own numbers.");
+  });
+  $("#use-example").addEventListener("click", () => {
+    state.labs = Object.assign({}, EX_LABS);
+    state.example = true;
+    syncLabInputs(); renderChecks(); save();
+  });
+
+  /* ================= Shake ================= */
+  const ING = {
+    milk: { k: 175, p: 9.5 }, oats: { k: 150, p: 5 }, banana: { k: 105, p: 1.3 }, pb: { k: 95, p: 4 },
+    sattu: { k: 80, p: 4.4 }, curd: { k: 100, p: 9 }, dates: { k: 70, p: 0.5 }
+  };
+  const on = { milk: true, oats: true, banana: true, pb: true, dates: true };
+  const NOTES = {
+    half: "First week: drink half the glass so your stomach can adjust.",
+    full: "Use a full scoop only if you weigh over 60 kg or eat little protein at meals. Otherwise protein goes past 1.6 g per kg.",
+    none: "Swaps the whey for 2 tbsp sattu (roasted chana flour) and 100 g hung curd (chakka)."
+  };
+  const glassWrap = $("#glass-wrap"), wave = $("#wave");
+  const mode = () => { const r = $('input[name="whey"]:checked'); return r ? r.value : "half"; };
+  function renderShake() {
+    const m = mode(), scale = (glassWrap.clientHeight * 0.86) / 800;
+    let tk = 0, tp = 0, top = null, fill = 0;
+    $$(".layer").forEach((layer) => {
+      const id = layer.dataset.ing;
+      let k = 0, p = 0;
+      if (id === "whey") { if (m !== "none") { k = m === "full" ? 120 : 60; p = m === "full" ? 24 : 12; } }
+      else if (id === "sattu" || id === "curd") { if (m === "none") { k = ING[id].k; p = ING[id].p; } }
+      else if (on[id]) { k = ING[id].k; p = ING[id].p; }
+      const px = k * scale;
+      layer.style.height = px + "px";
+      layer.classList.toggle("tiny", px < 16);
+      if (k > 0) top = layer;
+      tk += k; tp += p; fill += px;
+    });
+    wave.style.bottom = fill + "px";
+    wave.style.color = top ? getComputedStyle(top).backgroundColor : "transparent";
+    $('.layer[data-ing="whey"] span').textContent = m === "full" ? "Whey 1 scoop" : "Whey ½ scoop";
+    tween($("#s-kcal"), [tk], (v) => fmt(v[0]));
+    tween($("#s-pro"), [tp], (v) => String(Math.round(v[0])));
+    $("#s-note").textContent = NOTES[m];
+    const rw = $("#r-whey");
+    if (m === "none") rw.innerHTML = "<b>Instead</b><span>2 tbsp sattu (80 kcal · 4.4 g) and 100 g hung curd (100 kcal · 9 g)</span>";
+    else if (m === "full") rw.innerHTML = "<b>Whey</b><span>1 scoop (~30 g) · 120 kcal · 24 g</span>";
+    else rw.innerHTML = "<b>Whey</b><span>½ scoop (~15 g) · 60 kcal · 12 g</span>";
+  }
+  $$(".tog").forEach((b) => b.addEventListener("click", () => {
+    const id = b.dataset.toggle;
+    on[id] = !on[id];
+    b.setAttribute("aria-pressed", String(on[id]));
+    renderShake();
+  }));
+  $$('input[name="whey"]').forEach((r) => r.addEventListener("change", renderShake));
+  window.addEventListener("resize", renderShake);
+
+  // Pour-in effects the first time things scroll into view; resting state is already full.
+  function onFirstView(el, fn, threshold) {
+    if (!window.IntersectionObserver || reduce) return;
+    const io = new IntersectionObserver((en) => { if (en[0].isIntersecting) { io.disconnect(); fn(); } }, { threshold: threshold || 0.35 });
+    io.observe(el);
+  }
+  onFirstView(glassWrap, () => {
+    const layers = $$(".layer");
+    layers.forEach((l) => { l.style.transition = "none"; l.style.height = "0px"; });
+    wave.style.transition = "none"; wave.style.bottom = "0px";
+    void glassWrap.offsetHeight;
+    layers.forEach((l, i) => { l.style.transition = ""; l.style.transitionDelay = i * 90 + "ms"; });
+    wave.style.transition = "";
+    renderShake();
+    setTimeout(() => layers.forEach((l) => { l.style.transitionDelay = ""; }), 1600);
+  }, 0.4);
+
+  /* ================= Products ================= */
+  const cards = $("#cards"), dots = $$("#dots button");
+  let ticking = false;
+  cards.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const first = cards.children[0];
+      const stepW = first.getBoundingClientRect().width + 14;
+      const max = cards.scrollWidth - cards.clientWidth;
+      const i = cards.scrollLeft >= max - 4 ? cards.children.length - 1 : clamp(Math.round(cards.scrollLeft / stepW), 0, cards.children.length - 1);
+      dots.forEach((d, j) => { if (j === i) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+      ticking = false;
+    });
+  }, { passive: true });
+  dots.forEach((d, j) => d.addEventListener("click", () => {
+    cards.scrollTo({ left: cards.children[j].offsetLeft - 2, behavior: reduce ? "auto" : "smooth" });
+  }));
+  onFirstView(cards, () => {
+    const bars = $$(".bar span", cards);
+    bars.forEach((b) => { b.style.transition = "none"; b.style.width = "0%"; });
+    void cards.offsetHeight;
+    bars.forEach((b) => { b.style.transition = ""; b.style.width = b.dataset.w + "%"; });
+  }, 0.3);
+  if (finePointer && !reduce) {
+    $$(".card").forEach((card) => {
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = "perspective(800px) rotateX(" + (-y * 6).toFixed(2) + "deg) rotateY(" + (x * 8).toFixed(2) + "deg) translateY(-4px)";
+      });
+      card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+    });
+    $$(".magnetic").forEach((b) => {
+      b.addEventListener("pointermove", (e) => {
+        const r = b.getBoundingClientRect();
+        b.style.transform = "translate(" + ((e.clientX - r.left - r.width / 2) * 0.18).toFixed(1) + "px," + ((e.clientY - r.top - r.height / 2) * 0.3).toFixed(1) + "px)";
+      });
+      b.addEventListener("pointerleave", () => { b.style.transform = ""; });
+    });
+  }
+
+  /* ================= Dock + progress ================= */
+  const links = $$(".dock a"), pill = $("#pill");
+  let currentSec = null;
+  function setActive(id) {
+    currentSec = id;
+    let act = null;
+    links.forEach((l) => {
+      if (l.getAttribute("href") === "#" + id) { l.setAttribute("aria-current", "location"); act = l; }
+      else l.removeAttribute("aria-current");
+    });
+    if (act) { pill.style.opacity = "1"; pill.style.width = act.offsetWidth + "px"; pill.style.transform = "translateX(" + act.offsetLeft + "px)"; }
+    else pill.style.opacity = "0";
+  }
+  if (window.IntersectionObserver) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) setActive(en.target.id); });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    ["day", "you", "check", "plan", "buy", "safety"].forEach((id) => { const el = document.getElementById(id); if (el) io.observe(el); });
+  }
+  window.addEventListener("resize", () => setActive(currentSec));
+  const bar = $("#progress");
+  let pTick = false;
+  window.addEventListener("scroll", () => {
+    if (pTick) return;
+    pTick = true;
+    requestAnimationFrame(() => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = "scaleX(" + (max > 0 ? clamp(window.scrollY / max, 0, 1) : 0) + ")";
+      pTick = false;
+    });
+  }, { passive: true });
+
+  /* ================= Boot ================= */
+  syncInputs();
+  syncLabInputs();
+  renderProfile();
+  renderChecks();
+  renderShake();
+  setActive("day");
+})();
+</script>
+</html>
